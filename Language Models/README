@@ -8,6 +8,7 @@ On Eclipse/Netbeans:
 ---------------------
 On Command line:
 1. $ javac code/src/nlp/lm/*.java
-2. To execute BigramModel, $ java -cp <root_dir>/code/src nlp.lm.BigramModel <path_to_atis_dataset> 0.1
-3. To execute BackwardBigramModel, $ java -cp <root_dir>/code/src nlp.lm.BackwardBigramModel <path_to_atis_dataset> 0.1
-4. To execute BidirectionalBigramModel, $ java -cp <root_dir>/code/src nlp.lm.BidirectionalBigramModel <path_to_atis_dataset> 0.1
+2. Add the pos/ directory to code/
+3. To execute BigramModel, $ java -cp <root_dir>/code/src nlp.lm.BigramModel <path_to_atis_dataset> 0.1
+4. To execute BackwardBigramModel, $ java -cp <root_dir>/code/src nlp.lm.BackwardBigramModel <path_to_atis_dataset> 0.1
+5. To execute BidirectionalBigramModel, $ java -cp <root_dir>/code/src nlp.lm.BidirectionalBigramModel <path_to_atis_dataset> 0.1
