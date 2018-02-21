@@ -1,4 +1,4 @@
-// atis
+$ java -cp ~/Development/NLP/Language\ Models/code/src nlp.lm.BigramModel ~/Development/NLP/Language\ Models/code/pos/atis 0.1
 # Train Sentences = 519 (# words = 3922) 
 # Test Sentences = 58 (# words = 431)
 Training...
@@ -8,7 +8,7 @@ Testing...
 Perplexity = 19.341388622483773
 Word Perplexity = 24.053999598153656
 
-// wsj
+$ java -cp ~/Development/NLP/Language\ Models/code/src nlp.lm.BigramModel ~/Development/NLP/Language\ Models/code/pos/wsj 0.1
 # Train Sentences = 43820 (# words = 995626) 
 # Test Sentences = 4869 (# words = 111718)
 Training...
@@ -18,7 +18,7 @@ Testing...
 Perplexity = 219.71517777445175
 Word Perplexity = 275.1178149885602
 
-//brown
+$ java -cp ~/Development/NLP/Language\ Models/code/src nlp.lm.BigramModel ~/Development/NLP/Language\ Models/code/pos/brown 0.1
 # Train Sentences = 47207 (# words = 1079440) 
 # Test Sentences = 5245 (# words = 93530)
 Training...
