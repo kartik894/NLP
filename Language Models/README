@@ -1,0 +1,9 @@
+Steps to execute the code:
+
+---------------------
+On Eclipse/Netbeans:
+1. Import the code directory as a project on eclipse. 
+2. Add "pos/atis 0.1" or "pos/wsj 0.1" or "pos/brown 0.1" as arguments to the run configuration for all three models - BigramModel.java, BackwardBigramModel.java, BidirectionalBigramModel.java .
+
+---------------------
+On Command line:
