@@ -1,0 +1,9 @@
+(tensorflow_cpu) kartik@streetpizza:/scratch/cluster/kartik/NLP$ python BiLSTMs/pos_bilstm.py /projects/nlp/penn-treebank3/tagged/pos/wsj /scratch/cluster/kartik/NLP/pos_train_dir/ standard test 0
+WARNING:tensorflow:From BiLSTMs/pos_bilstm.py:190: calling argmax (from tensorflow.python.ops.math_ops) with dimension is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the `axis` argument instead
+2018-03-14 12:26:34.667980: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2
+Test Accuracy: 0.955
+Test Loss: 0.149
+Test OOV Accuracy: 0.570
+
