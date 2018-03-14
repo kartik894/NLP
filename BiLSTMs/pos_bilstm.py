@@ -23,40 +23,34 @@ HIDDEN_FEATURE_DIM = 50
 ## Model class is adatepd from model.py found here
 ## https://github.com/monikkinom/ner-lstm/
 class Model:
-	def __init__(self, input_dim, sequence_len, output_dim,
+	def __init__(self, model_type_, input_dim, sequence_len, output_dim,
 				 suffix_dim, startsWithCapital_dim, 
 				 startsWithDigit_dim, hyphen_dim,
 				 hidden_state_size=300):
 		self._input_dim = input_dim
 		self._sequence_len = sequence_len
 		self._output_dim = output_dim
-		self._hidden_feature_dim = suffix_dim + startsWithCapital_dim + startsWithDigit_dim + hyphen_dim
+		self.model_type = model_type_
+		
 		self._hidden_state_size = hidden_state_size
 		self._optimizer = tf.train.AdamOptimizer(0.0005)
 
-		self._suffix_dim = suffix_dim
-		self._startsWithCapital_dim = startsWithCapital_dim
-		self._startsWithDigit_dim = startsWithDigit_dim
-		self._hyphen_dim = hyphen_dim
+		if self.model_type != 0:
+			self._hidden_feature_dim = suffix_dim + startsWithCapital_dim + startsWithDigit_dim + hyphen_dim
+			self._suffix_dim = suffix_dim
+			self._startsWithCapital_dim = startsWithCapital_dim
+			self._startsWithDigit_dim = startsWithDigit_dim
+			self._hyphen_dim = hyphen_dim
 
 	# Adapted from https://github.com/monikkinom/ner-lstm/blob/master/model.py __init__ function
 	def create_placeholders(self):
 		self._input_words = tf.placeholder(tf.int32, [BATCH_SIZE, self._sequence_len])
 		self._output_tags = tf.placeholder(tf.int32, [BATCH_SIZE, self._sequence_len])
-
-		self._suffix = tf.placeholder(tf.int32, [BATCH_SIZE, self._sequence_len])
-		self._startsWithCapital = tf.placeholder(tf.int32, [BATCH_SIZE, self._sequence_len])
-		self._startsWithDigit = tf.placeholder(tf.int32, [BATCH_SIZE, self._sequence_len])
-		self._hyphen = tf.placeholder(tf.int32, [BATCH_SIZE, self._sequence_len])
-
-	def set_input_output(self, input_, output, suffix, startsWithCapital, startsWithDigit, hyphen):
-		self._input_words = input_
-		self._output_tags = output
-
-		self._suffix = suffix
-		self._startsWithCapital = startsWithCapital
-		self._startsWithDigit = startsWithDigit
-		self._hyphen = hyphen
+		if self.model_type != 0 :
+			self._suffix = tf.placeholder(tf.int32, [BATCH_SIZE, self._sequence_len])
+			self._startsWithCapital = tf.placeholder(tf.int32, [BATCH_SIZE, self._sequence_len])
+			self._startsWithDigit = tf.placeholder(tf.int32, [BATCH_SIZE, self._sequence_len])
+			self._hyphen = tf.placeholder(tf.int32, [BATCH_SIZE, self._sequence_len])
 	
 	## Returns the mask that is 1 for the actual words
 	## and 0 for the padded part
@@ -106,13 +100,14 @@ class Model:
 		## This is for computational tractability
 		with tf.variable_scope("lstm_input"):
 			lstm_input = self.get_embedding(self._input_words)
-			if sys.argv[5] == 1 :
-				suffix_lstm = self.create_one_hot(self._suffix, self._suffix_dim)
-				startsWithCapital_lstm = self.create_one_hot(self._startsWithCapital, self._startsWithCapital_dim)
-				startsWithDigit_lstm = self.create_one_hot(self._startsWithDigit, self._startsWithDigit_dim)
-				hyphen_lstm = self.create_one_hot(self._hyphen, self._hyphen_dim)
+			if self.model_type == 1 :
+				suffix = tf.reshape(self._suffix, [128,100,1])
+				startsWithCapital = tf.reshape(self._startsWithCapital, [128,100,1])
+				startsWithDigit = tf.reshape(self._startsWithDigit, [128,100,1])
+				hyphen = tf.reshape(self._hyphen, [128,100,1])
 
-				lstm_input = tf.concat([lstm_input, suffix_lstm, startsWithCapital_lstm, startsWithDigit_lstm, hyphen_lstm], 2)
+				lstm_input = tf.concat([lstm_input, tf.cast(suffix, tf.float32), tf.cast(startsWithCapital, tf.float32), 
+										tf.cast(startsWithDigit, tf.float32), tf.cast(hyphen, tf.float32)], 2)
 
 		
 		## Apply bidrectional dyamic rnn to get a tuple of forward
@@ -127,7 +122,7 @@ class Model:
 		with tf.variable_scope("lstm_output"):
 			outputs = tf.concat(outputs, 2)
 
-			if sys.argv[5] == 2:
+			if self.model_type == 2:
 				suffix = tf.reshape(self._suffix, [128,100,1])
 				startsWithCapital = tf.reshape(self._startsWithCapital, [128,100,1])
 				startsWithDigit = tf.reshape(self._startsWithDigit, [128,100,1])
@@ -298,12 +293,18 @@ def compute_summary_metrics(sess, m,sentence_words_val, sentence_tags_val):
 	loss, accuracy, total_len, oov_accuracy, oov_total_len = 0.0, 0.0, 0, 0.0, 0
 	for i, epoch in enumerate(generate_epochs(sentence_words_val, sentence_tags_val, 1)):
 		for step, (X, y) in enumerate(epoch):
-			wordId, suffix, startsWithCapital, startsWithDigit, hyphen = segregate_word_hotfeatures(X)
+			wordId = X
+			if m.model_type != 0 :
+				wordId, suffix, startsWithCapital, startsWithDigit, hyphen = segregate_word_hotfeatures(X)
 
-			batch_loss, batch_accuracy, batch_len, oov_batch_accuracy, oov_batch_len = \
-			sess.run([m.loss, m.accuracy, m.total_length, m.oov_accuracy, m.oov_total_length], \
-					feed_dict={m.input_words:wordId, m.output_tags:y, m.suffix:suffix,
-					m.startsWithCapital:startsWithCapital, m.startsWithDigit:startsWithDigit, m.hyphen:hyphen})
+				batch_loss, batch_accuracy, batch_len, oov_batch_accuracy, oov_batch_len = \
+				sess.run([m.loss, m.accuracy, m.total_length, m.oov_accuracy, m.oov_total_length], \
+						feed_dict={m.input_words:wordId, m.output_tags:y, m.suffix:suffix,
+						m.startsWithCapital:startsWithCapital, m.startsWithDigit:startsWithDigit, m.hyphen:hyphen})
+			else:
+				batch_loss, batch_accuracy, batch_len, oov_batch_accuracy, oov_batch_len = \
+				sess.run([m.loss, m.accuracy, m.total_length, m.oov_accuracy, m.oov_total_length], \
+						feed_dict={m.input_words:wordId, m.output_tags:y})
 			loss += batch_loss
 			accuracy += batch_accuracy
 			total_len += batch_len
@@ -316,10 +317,10 @@ def compute_summary_metrics(sess, m,sentence_words_val, sentence_tags_val):
 
 ## train and test adapted from https://github.com/tensorflow/tensorflow/blob/master/tensorflow/
 ## models/image/cifar10/cifar10_train.py and cifar10_eval.py
-def train(sentence_words_train, sentence_tags_train, sentence_words_val,
+def train(model_type, sentence_words_train, sentence_tags_train, sentence_words_val,
 		  sentence_tags_val, vocab_size, suffix_size, startsWithCapital_size,
 		  startsWithDigit_size, hyphen_size, no_pos_classes, train_dir):
-	m = Model(vocab_size, MAX_LENGTH, no_pos_classes, suffix_size, startsWithCapital_size,
+	m = Model(model_type, vocab_size, MAX_LENGTH, no_pos_classes, suffix_size, startsWithCapital_size,
 		  startsWithDigit_size, hyphen_size)
 	with tf.Graph().as_default():
 	    global_step = tf.Variable(0, trainable=False)
@@ -350,38 +351,60 @@ def train(sentence_words_train, sentence_tags_train, sentence_words_val,
 	    for i, epoch in enumerate(generate_epochs(sentence_words_train, sentence_tags_train, NO_OF_EPOCHS)):
 	        start_time = time.time()
 	        for step, (X, y) in enumerate(epoch):
+				wordId = X
+				if m.model_type != 0 :
+					wordId, suffix, startsWithCapital, startsWithDigit, hyphen = segregate_word_hotfeatures(X)
 
-				wordId, suffix, startsWithCapital, startsWithDigit, hyphen = segregate_word_hotfeatures(X)
-
-				_, summary_value = sess.run([train_op, summary_op], feed_dict=
+					_, summary_value = sess.run([train_op, summary_op], feed_dict=
 										 {m.input_words:wordId, m.output_tags:y, m.suffix:suffix,
 										m.startsWithCapital:startsWithCapital, m.startsWithDigit:startsWithDigit, m.hyphen:hyphen})
-				duration = time.time() - start_time
-				j += 1
-				if j % VALIDATION_FREQUENCY == 0:
-					val_loss, val_accuracy, val_oov_accuracy = compute_summary_metrics(sess, m, sentence_words_val, sentence_tags_val)
-					summary = tf.Summary()
-					summary.ParseFromString(summary_value)
-					summary.value.add(tag='Validation Loss', simple_value=val_loss)
-					summary.value.add(tag='Validation Accuracy', simple_value=val_accuracy)
-					summary.value.add(tag='OOV Accuracy', simple_value=val_oov_accuracy)
-					summary_writer.add_summary(summary, j)
-					log_string = '{} batches ====> Validation Accuracy {:.3f}, Validation Loss {:.3f}'
-					print log_string.format(j, val_accuracy, val_loss)
-				else:
-					summary_writer.add_summary(summary_value, j)
+					duration = time.time() - start_time
+					j += 1
+					if j % VALIDATION_FREQUENCY == 0:
+						val_loss, val_accuracy, val_oov_accuracy = compute_summary_metrics(sess, m, sentence_words_val, sentence_tags_val)
+						summary = tf.Summary()
+						summary.ParseFromString(summary_value)
+						summary.value.add(tag='Validation Loss', simple_value=val_loss)
+						summary.value.add(tag='Validation Accuracy', simple_value=val_accuracy)
+						summary.value.add(tag='OOV Accuracy', simple_value=val_oov_accuracy)
+						summary_writer.add_summary(summary, j)
+						log_string = '{} batches ====> Validation Accuracy {:.3f}, Validation Loss {:.3f}'
+						print log_string.format(j, val_accuracy, val_loss)
+					else:
+						summary_writer.add_summary(summary_value, j)
 
-				if j % CHECKPOINT_FREQUENCY == 0:
-					checkpoint_path = os.path.join(train_dir, 'model.ckpt')
-					saver.save(sess, checkpoint_path, global_step=j)
+					if j % CHECKPOINT_FREQUENCY == 0:
+						checkpoint_path = os.path.join(train_dir, 'model.ckpt')
+						saver.save(sess, checkpoint_path, global_step=j)
+				else:
+					_, summary_value = sess.run([train_op, summary_op], feed_dict=
+										 {m.input_words:wordId, m.output_tags:y})
+					duration = time.time() - start_time
+					j += 1
+					if j % VALIDATION_FREQUENCY == 0:
+						val_loss, val_accuracy, val_oov_accuracy = compute_summary_metrics(sess, m, sentence_words_val, sentence_tags_val)
+						summary = tf.Summary()
+						summary.ParseFromString(summary_value)
+						summary.value.add(tag='Validation Loss', simple_value=val_loss)
+						summary.value.add(tag='Validation Accuracy', simple_value=val_accuracy)
+						summary.value.add(tag='OOV Accuracy', simple_value=val_oov_accuracy)
+						summary_writer.add_summary(summary, j)
+						log_string = '{} batches ====> Validation Accuracy {:.3f}, Validation Loss {:.3f}'
+						print log_string.format(j, val_accuracy, val_loss)
+					else:
+						summary_writer.add_summary(summary_value, j)
+
+					if j % CHECKPOINT_FREQUENCY == 0:
+						checkpoint_path = os.path.join(train_dir, 'model.ckpt')
+						saver.save(sess, checkpoint_path, global_step=j)
 
 ## Check performance on held out test data
 ## Loads most recent model from train_dir
 ## and applies it on test data
-def test(sentence_words_test, sentence_tags_test,
+def test(model_type, sentence_words_test, sentence_tags_test,
 		 vocab_size, suffix_size, startsWithCapital_size,
 		  startsWithDigit_size, hyphen_size, no_pos_classes, train_dir):
-	m = Model(vocab_size, MAX_LENGTH, no_pos_classes, suffix_size, startsWithCapital_size,
+	m = Model(model_type, vocab_size, MAX_LENGTH, no_pos_classes, suffix_size, startsWithCapital_size,
 		  startsWithDigit_size, hyphen_size)
 	with tf.Graph().as_default():
 		global_step = tf.Variable(0, trainable=False)
@@ -406,7 +429,7 @@ if __name__ == '__main__':
 	split_type = sys.argv[3]
 	experiment_type = sys.argv[4]
 
-	p = PreprocessData(dataset_type='wsj')
+	p = PreprocessData(dataset_type='wsj', model_type_=int(sys.argv[5]))
 
 	files = p.preProcessDirectory(dataset_path)
 	
@@ -429,8 +452,8 @@ if __name__ == '__main__':
 		if os.path.exists(train_dir):
 			shutil.rmtree(train_dir)
 		os.mkdir(train_dir)
-		train(X_train, y_train, X_val, y_val, len(p.vocabulary)+2, len(p.suffix_list)+2,
+		train(int(sys.argv[5]), X_train, y_train, X_val, y_val, len(p.vocabulary)+2, len(p.suffix_list)+2,
 			3, 3, 3, len(p.pos_tags)+1, train_dir)
 	else:
-		test(X_test, y_test, len(p.vocabulary)+2, len(p.suffix_list)+2,
+		test(int(sys.argv[5]), X_test, y_test, len(p.vocabulary)+2, len(p.suffix_list)+2,
 			3, 3, 3, len(p.pos_tags)+1, train_dir)
