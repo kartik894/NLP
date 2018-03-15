@@ -1,70 +1,70 @@
-10 batches ====> Validation Accuracy 0.142, Validation Loss 3.591
-20 batches ====> Validation Accuracy 0.143, Validation Loss 3.075
-30 batches ====> Validation Accuracy 0.153, Validation Loss 3.012
-40 batches ====> Validation Accuracy 0.157, Validation Loss 2.975
-50 batches ====> Validation Accuracy 0.157, Validation Loss 2.960
-60 batches ====> Validation Accuracy 0.160, Validation Loss 2.931
-70 batches ====> Validation Accuracy 0.166, Validation Loss 2.901
-80 batches ====> Validation Accuracy 0.170, Validation Loss 2.832
-90 batches ====> Validation Accuracy 0.273, Validation Loss 2.729
-100 batches ====> Validation Accuracy 0.366, Validation Loss 2.557
-110 batches ====> Validation Accuracy 0.427, Validation Loss 2.353
-120 batches ====> Validation Accuracy 0.482, Validation Loss 2.138
-130 batches ====> Validation Accuracy 0.513, Validation Loss 1.936
-140 batches ====> Validation Accuracy 0.554, Validation Loss 1.752
-150 batches ====> Validation Accuracy 0.592, Validation Loss 1.577
-160 batches ====> Validation Accuracy 0.655, Validation Loss 1.399
-170 batches ====> Validation Accuracy 0.709, Validation Loss 1.232
-180 batches ====> Validation Accuracy 0.755, Validation Loss 1.071
-190 batches ====> Validation Accuracy 0.797, Validation Loss 0.921
-200 batches ====> Validation Accuracy 0.830, Validation Loss 0.791
-210 batches ====> Validation Accuracy 0.869, Validation Loss 0.673
-220 batches ====> Validation Accuracy 0.888, Validation Loss 0.578
-230 batches ====> Validation Accuracy 0.910, Validation Loss 0.494
-240 batches ====> Validation Accuracy 0.917, Validation Loss 0.427
-250 batches ====> Validation Accuracy 0.922, Validation Loss 0.373
-260 batches ====> Validation Accuracy 0.927, Validation Loss 0.330
-270 batches ====> Validation Accuracy 0.934, Validation Loss 0.292
-280 batches ====> Validation Accuracy 0.939, Validation Loss 0.263
-290 batches ====> Validation Accuracy 0.944, Validation Loss 0.239
-300 batches ====> Validation Accuracy 0.945, Validation Loss 0.222
-310 batches ====> Validation Accuracy 0.948, Validation Loss 0.209
-320 batches ====> Validation Accuracy 0.949, Validation Loss 0.198
-330 batches ====> Validation Accuracy 0.952, Validation Loss 0.188
-340 batches ====> Validation Accuracy 0.953, Validation Loss 0.178
-350 batches ====> Validation Accuracy 0.955, Validation Loss 0.171
-360 batches ====> Validation Accuracy 0.954, Validation Loss 0.165
-370 batches ====> Validation Accuracy 0.957, Validation Loss 0.157
-380 batches ====> Validation Accuracy 0.958, Validation Loss 0.154
-390 batches ====> Validation Accuracy 0.958, Validation Loss 0.150
-400 batches ====> Validation Accuracy 0.957, Validation Loss 0.149
-410 batches ====> Validation Accuracy 0.959, Validation Loss 0.145
-420 batches ====> Validation Accuracy 0.958, Validation Loss 0.143
-430 batches ====> Validation Accuracy 0.959, Validation Loss 0.140
-440 batches ====> Validation Accuracy 0.959, Validation Loss 0.139
-450 batches ====> Validation Accuracy 0.961, Validation Loss 0.136
-460 batches ====> Validation Accuracy 0.961, Validation Loss 0.133
-470 batches ====> Validation Accuracy 0.960, Validation Loss 0.133
-480 batches ====> Validation Accuracy 0.960, Validation Loss 0.132
-490 batches ====> Validation Accuracy 0.962, Validation Loss 0.130
-500 batches ====> Validation Accuracy 0.962, Validation Loss 0.129
-510 batches ====> Validation Accuracy 0.961, Validation Loss 0.130
-520 batches ====> Validation Accuracy 0.960, Validation Loss 0.130
-530 batches ====> Validation Accuracy 0.963, Validation Loss 0.127
-540 batches ====> Validation Accuracy 0.962, Validation Loss 0.125
-550 batches ====> Validation Accuracy 0.962, Validation Loss 0.125
-560 batches ====> Validation Accuracy 0.961, Validation Loss 0.126
-570 batches ====> Validation Accuracy 0.963, Validation Loss 0.123
-580 batches ====> Validation Accuracy 0.963, Validation Loss 0.122
-590 batches ====> Validation Accuracy 0.962, Validation Loss 0.124
-600 batches ====> Validation Accuracy 0.962, Validation Loss 0.122
-610 batches ====> Validation Accuracy 0.961, Validation Loss 0.125
-620 batches ====> Validation Accuracy 0.963, Validation Loss 0.120
-630 batches ====> Validation Accuracy 0.961, Validation Loss 0.125
-640 batches ====> Validation Accuracy 0.961, Validation Loss 0.125
-650 batches ====> Validation Accuracy 0.963, Validation Loss 0.122
-660 batches ====> Validation Accuracy 0.963, Validation Loss 0.120
-670 batches ====> Validation Accuracy 0.963, Validation Loss 0.120
-680 batches ====> Validation Accuracy 0.962, Validation Loss 0.121
-690 batches ====> Validation Accuracy 0.963, Validation Loss 0.120
-700 batches ====> Validation Accuracy 0.964, Validation Loss 0.118
+10 batches ====> Validation Accuracy 0.141, Validation Loss 3.235, OOV Accuracy 0.142
+20 batches ====> Validation Accuracy 0.166, Validation Loss 2.955, OOV Accuracy 0.138
+30 batches ====> Validation Accuracy 0.204, Validation Loss 2.818, OOV Accuracy 0.257
+40 batches ====> Validation Accuracy 0.212, Validation Loss 2.709, OOV Accuracy 0.260
+50 batches ====> Validation Accuracy 0.228, Validation Loss 2.639, OOV Accuracy 0.396
+60 batches ====> Validation Accuracy 0.276, Validation Loss 2.557, OOV Accuracy 0.263
+70 batches ====> Validation Accuracy 0.316, Validation Loss 2.454, OOV Accuracy 0.262
+80 batches ====> Validation Accuracy 0.426, Validation Loss 2.289, OOV Accuracy 0.392
+90 batches ====> Validation Accuracy 0.495, Validation Loss 2.083, OOV Accuracy 0.455
+100 batches ====> Validation Accuracy 0.515, Validation Loss 1.849, OOV Accuracy 0.452
+110 batches ====> Validation Accuracy 0.550, Validation Loss 1.638, OOV Accuracy 0.482
+120 batches ====> Validation Accuracy 0.605, Validation Loss 1.442, OOV Accuracy 0.525
+130 batches ====> Validation Accuracy 0.665, Validation Loss 1.258, OOV Accuracy 0.592
+140 batches ====> Validation Accuracy 0.723, Validation Loss 1.085, OOV Accuracy 0.640
+150 batches ====> Validation Accuracy 0.784, Validation Loss 0.923, OOV Accuracy 0.680
+160 batches ====> Validation Accuracy 0.832, Validation Loss 0.766, OOV Accuracy 0.708
+170 batches ====> Validation Accuracy 0.872, Validation Loss 0.633, OOV Accuracy 0.730
+180 batches ====> Validation Accuracy 0.887, Validation Loss 0.527, OOV Accuracy 0.736
+190 batches ====> Validation Accuracy 0.907, Validation Loss 0.440, OOV Accuracy 0.740
+200 batches ====> Validation Accuracy 0.918, Validation Loss 0.372, OOV Accuracy 0.747
+210 batches ====> Validation Accuracy 0.926, Validation Loss 0.318, OOV Accuracy 0.758
+220 batches ====> Validation Accuracy 0.934, Validation Loss 0.280, OOV Accuracy 0.757
+230 batches ====> Validation Accuracy 0.942, Validation Loss 0.248, OOV Accuracy 0.757
+240 batches ====> Validation Accuracy 0.946, Validation Loss 0.225, OOV Accuracy 0.761
+250 batches ====> Validation Accuracy 0.949, Validation Loss 0.206, OOV Accuracy 0.767
+260 batches ====> Validation Accuracy 0.952, Validation Loss 0.192, OOV Accuracy 0.771
+270 batches ====> Validation Accuracy 0.952, Validation Loss 0.180, OOV Accuracy 0.760
+280 batches ====> Validation Accuracy 0.953, Validation Loss 0.171, OOV Accuracy 0.761
+290 batches ====> Validation Accuracy 0.955, Validation Loss 0.163, OOV Accuracy 0.789
+300 batches ====> Validation Accuracy 0.954, Validation Loss 0.160, OOV Accuracy 0.759
+310 batches ====> Validation Accuracy 0.957, Validation Loss 0.154, OOV Accuracy 0.789
+320 batches ====> Validation Accuracy 0.958, Validation Loss 0.150, OOV Accuracy 0.789
+330 batches ====> Validation Accuracy 0.959, Validation Loss 0.146, OOV Accuracy 0.781
+340 batches ====> Validation Accuracy 0.959, Validation Loss 0.142, OOV Accuracy 0.783
+350 batches ====> Validation Accuracy 0.960, Validation Loss 0.138, OOV Accuracy 0.786
+360 batches ====> Validation Accuracy 0.961, Validation Loss 0.134, OOV Accuracy 0.787
+370 batches ====> Validation Accuracy 0.961, Validation Loss 0.131, OOV Accuracy 0.779
+380 batches ====> Validation Accuracy 0.962, Validation Loss 0.132, OOV Accuracy 0.778
+390 batches ====> Validation Accuracy 0.962, Validation Loss 0.128, OOV Accuracy 0.764
+400 batches ====> Validation Accuracy 0.961, Validation Loss 0.128, OOV Accuracy 0.773
+410 batches ====> Validation Accuracy 0.962, Validation Loss 0.128, OOV Accuracy 0.780
+420 batches ====> Validation Accuracy 0.962, Validation Loss 0.125, OOV Accuracy 0.764
+430 batches ====> Validation Accuracy 0.963, Validation Loss 0.124, OOV Accuracy 0.798
+440 batches ====> Validation Accuracy 0.963, Validation Loss 0.123, OOV Accuracy 0.792
+450 batches ====> Validation Accuracy 0.964, Validation Loss 0.121, OOV Accuracy 0.790
+460 batches ====> Validation Accuracy 0.964, Validation Loss 0.120, OOV Accuracy 0.786
+470 batches ====> Validation Accuracy 0.964, Validation Loss 0.121, OOV Accuracy 0.792
+480 batches ====> Validation Accuracy 0.964, Validation Loss 0.118, OOV Accuracy 0.784
+490 batches ====> Validation Accuracy 0.964, Validation Loss 0.118, OOV Accuracy 0.759
+500 batches ====> Validation Accuracy 0.964, Validation Loss 0.118, OOV Accuracy 0.799
+510 batches ====> Validation Accuracy 0.963, Validation Loss 0.119, OOV Accuracy 0.766
+520 batches ====> Validation Accuracy 0.963, Validation Loss 0.120, OOV Accuracy 0.774
+530 batches ====> Validation Accuracy 0.963, Validation Loss 0.119, OOV Accuracy 0.767
+540 batches ====> Validation Accuracy 0.964, Validation Loss 0.115, OOV Accuracy 0.776
+550 batches ====> Validation Accuracy 0.964, Validation Loss 0.115, OOV Accuracy 0.796
+560 batches ====> Validation Accuracy 0.964, Validation Loss 0.116, OOV Accuracy 0.780
+570 batches ====> Validation Accuracy 0.965, Validation Loss 0.114, OOV Accuracy 0.791
+580 batches ====> Validation Accuracy 0.964, Validation Loss 0.115, OOV Accuracy 0.765
+590 batches ====> Validation Accuracy 0.965, Validation Loss 0.116, OOV Accuracy 0.794
+600 batches ====> Validation Accuracy 0.965, Validation Loss 0.114, OOV Accuracy 0.787
+610 batches ====> Validation Accuracy 0.963, Validation Loss 0.117, OOV Accuracy 0.742
+620 batches ====> Validation Accuracy 0.965, Validation Loss 0.113, OOV Accuracy 0.803
+630 batches ====> Validation Accuracy 0.963, Validation Loss 0.117, OOV Accuracy 0.766
+640 batches ====> Validation Accuracy 0.964, Validation Loss 0.116, OOV Accuracy 0.790
+650 batches ====> Validation Accuracy 0.964, Validation Loss 0.115, OOV Accuracy 0.779
+660 batches ====> Validation Accuracy 0.965, Validation Loss 0.113, OOV Accuracy 0.787
+670 batches ====> Validation Accuracy 0.965, Validation Loss 0.113, OOV Accuracy 0.793
+680 batches ====> Validation Accuracy 0.965, Validation Loss 0.113, OOV Accuracy 0.789
+690 batches ====> Validation Accuracy 0.965, Validation Loss 0.113, OOV Accuracy 0.790
+700 batches ====> Validation Accuracy 0.965, Validation Loss 0.113, OOV Accuracy 0.765
