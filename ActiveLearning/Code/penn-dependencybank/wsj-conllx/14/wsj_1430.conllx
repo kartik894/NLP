@@ -1,0 +1,28 @@
+1	THE	_	DET	DT	_	4	det	_	_
+2	SUPREME	_	PROPN	NNP	_	4	nn	_	_
+3	COURT	_	PROPN	NNP	_	4	nn	_	_
+4	ruling	_	NOUN	NN	_	16	nsubj	_	_
+5	upholding	_	VERB	VBG	_	4	vmod	_	_
+6	Missouri	_	PROPN	NNP	_	10	poss	_	_
+7	's	_	PART	POS	_	6	possessive	_	_
+8	restrictive	_	ADJ	JJ	_	10	amod	_	_
+9	abortion	_	NOUN	NN	_	10	nn	_	_
+10	law	_	NOUN	NN	_	5	dobj	_	_
+11	was	_	VERB	VBD	_	16	cop	_	_
+12	Webster	_	PROPN	NNP	_	16	nn	_	_
+13	vs.	_	X	FW	_	16	nn	_	_
+14	Reproductive	_	PROPN	NNP	_	16	nn	_	_
+15	Health	_	PROPN	NNP	_	16	nn	_	_
+16	Services	_	PROPN	NNPS	_	0	root	_	_
+17	.	_	PUNCT	.	_	16	punct	_	_
+
+1	The	_	DET	DT	_	2	det	_	_
+2	citation	_	NOUN	NN	_	4	nsubjpass	_	_
+3	was	_	AUX	VBD	_	4	auxpass	_	_
+4	misstated	_	VERB	VBN	_	0	root	_	_
+5	in	_	ADP	IN	_	4	prep	_	_
+6	Friday	_	PROPN	NNP	_	8	poss	_	_
+7	's	_	PART	POS	_	6	possessive	_	_
+8	edition	_	NOUN	NN	_	5	pobj	_	_
+9	.	_	PUNCT	.	_	4	punct	_	_
+

@@ -1,0 +1,115 @@
+1	Following	_	VERB	VBG	_	2	dep	_	_
+2	is	_	VERB	VBZ	_	0	root	_	_
+3	a	_	DET	DT	_	5	det	_	_
+4	weekly	_	ADJ	JJ	_	5	amod	_	_
+5	listing	_	NOUN	NN	_	2	nsubj	_	_
+6	of	_	ADP	IN	_	5	prep	_	_
+7	unadited	_	ADJ	JJ	_	10	amod	_	_
+8	net	_	ADJ	JJ	_	10	amod	_	_
+9	asset	_	NOUN	NN	_	10	nn	_	_
+10	values	_	NOUN	NNS	_	6	pobj	_	_
+11	of	_	ADP	IN	_	10	prep	_	_
+12	publicly	_	ADV	RB	_	13	advmod	_	_
+13	traded	_	VERB	VBN	_	16	amod	_	_
+14	investment	_	NOUN	NN	_	16	nn	_	_
+15	fund	_	NOUN	NN	_	16	nn	_	_
+16	shares	_	NOUN	NNS	_	11	pobj	_	_
+17	,	_	PUNCT	,	_	16	punct	_	_
+18	reported	_	VERB	VBN	_	16	vmod	_	_
+19	by	_	ADP	IN	_	18	prep	_	_
+20	the	_	DET	DT	_	21	det	_	_
+21	companies	_	NOUN	NNS	_	19	pobj	_	_
+22	as	_	ADP	IN	_	18	prep	_	_
+23	of	_	ADP	IN	_	22	pcomp	_	_
+24	Friday	_	PROPN	NNP	_	26	poss	_	_
+25	's	_	PART	POS	_	24	possessive	_	_
+26	close	_	NOUN	NN	_	23	pobj	_	_
+27	.	_	PUNCT	.	_	2	punct	_	_
+
+1	Also	_	ADV	RB	_	2	advmod	_	_
+2	shown	_	VERB	VBN	_	0	root	_	_
+3	is	_	AUX	VBZ	_	2	auxpass	_	_
+4	the	_	DET	DT	_	8	det	_	_
+5	closing	_	NOUN	NN	_	8	nn	_	_
+6	listed	_	ADJ	JJ	_	8	amod	_	_
+7	market	_	NOUN	NN	_	8	nn	_	_
+8	price	_	NOUN	NN	_	2	nsubjpass	_	_
+9	or	_	CONJ	CC	_	8	cc	_	_
+10	a	_	DET	DT	_	13	det	_	_
+11	dealer-to-dealer	_	ADJ	JJ	_	13	amod	_	_
+12	asked	_	ADJ	JJ	_	13	amod	_	_
+13	price	_	NOUN	NN	_	8	conj	_	_
+14	of	_	ADP	IN	_	8	prep	_	_
+15	each	_	DET	DT	_	16	det	_	_
+16	fund	_	NOUN	NN	_	18	poss	_	_
+17	's	_	PART	POS	_	16	possessive	_	_
+18	shares	_	NOUN	NNS	_	14	pobj	_	_
+19	,	_	PUNCT	,	_	8	punct	_	_
+20	with	_	ADP	IN	_	8	prep	_	_
+21	the	_	DET	DT	_	22	det	_	_
+22	percentage	_	NOUN	NN	_	20	pobj	_	_
+23	of	_	ADP	IN	_	22	prep	_	_
+24	difference	_	NOUN	NN	_	23	pobj	_	_
+25	.	_	PUNCT	.	_	2	punct	_	_
+
+1	Closed	_	ADJ	JJ	_	4	amod	_	_
+2	End	_	NOUN	NN	_	4	nn	_	_
+3	Bond	_	NOUN	NN	_	4	nn	_	_
+4	Funds	_	NOUN	NNS	_	0	root	_	_
+
+1	Flexible	_	ADJ	JJ	_	3	amod	_	_
+2	Portfolio	_	NOUN	NN	_	3	nn	_	_
+3	Funds	_	NOUN	NNS	_	0	root	_	_
+
+1	Specialized	_	ADJ	JJ	_	2	amod	_	_
+2	Equity	_	NOUN	NN	_	0	root	_	_
+3	and	_	CONJ	CC	_	2	cc	_	_
+4	Convertible	_	ADJ	JJ	_	5	amod	_	_
+5	Funds	_	NOUN	NNS	_	2	conj	_	_
+
+1	a	_	SYM	SYM	_	3	dep	_	_
+2	-	_	PUNCT	:	_	3	punct	_	_
+3	Ex-dividend	_	NOUN	NN	_	0	root	_	_
+4	.	_	PUNCT	.	_	3	punct	_	_
+
+1	b	_	SYM	SYM	_	3	dep	_	_
+2	-	_	PUNCT	:	_	3	punct	_	_
+3	As	_	ADP	IN	_	0	root	_	_
+4	of	_	ADP	IN	_	3	pcomp	_	_
+5	Thursday	_	PROPN	NNP	_	7	poss	_	_
+6	's	_	PART	POS	_	5	possessive	_	_
+7	close	_	NOUN	NN	_	4	pobj	_	_
+8	.	_	PUNCT	.	_	3	punct	_	_
+
+1	c	_	SYM	SYM	_	3	dep	_	_
+2	-	_	PUNCT	:	_	3	punct	_	_
+3	Translated	_	VERB	VBN	_	0	root	_	_
+4	at	_	ADP	IN	_	3	prep	_	_
+5	Commercial	_	PROPN	NNP	_	8	nn	_	_
+6	Rand	_	PROPN	NNP	_	8	nn	_	_
+7	exchange	_	NOUN	NN	_	8	nn	_	_
+8	rate	_	NOUN	NN	_	4	pobj	_	_
+9	.	_	PUNCT	.	_	3	punct	_	_
+
+1	e	_	SYM	SYM	_	3	dep	_	_
+2	-	_	PUNCT	:	_	3	punct	_	_
+3	In	_	ADP	IN	_	0	root	_	_
+4	Canadian	_	ADJ	JJ	_	5	amod	_	_
+5	dollars	_	NOUN	NNS	_	3	pobj	_	_
+6	.	_	PUNCT	.	_	3	punct	_	_
+
+1	f	_	SYM	SYM	_	3	dep	_	_
+2	-	_	PUNCT	:	_	3	punct	_	_
+3	As	_	ADP	IN	_	0	root	_	_
+4	of	_	ADP	IN	_	3	pcomp	_	_
+5	Wednesday	_	PROPN	NNP	_	7	poss	_	_
+6	's	_	PART	POS	_	5	possessive	_	_
+7	close	_	NOUN	NN	_	4	pobj	_	_
+8	.	_	PUNCT	.	_	3	punct	_	_
+
+1	z	_	SYM	SYM	_	4	dep	_	_
+2	-	_	PUNCT	:	_	4	punct	_	_
+3	Not	_	ADV	RB	_	4	neg	_	_
+4	available	_	ADJ	JJ	_	0	root	_	_
+5	.	_	PUNCT	.	_	4	punct	_	_
+

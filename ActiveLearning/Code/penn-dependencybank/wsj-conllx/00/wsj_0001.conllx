@@ -1,0 +1,33 @@
+1	Pierre	_	PROPN	NNP	_	2	nn	_	_
+2	Vinken	_	PROPN	NNP	_	9	nsubj	_	_
+3	,	_	PUNCT	,	_	2	punct	_	_
+4	61	_	NUM	CD	_	5	num	_	_
+5	years	_	NOUN	NNS	_	6	npadvmod	_	_
+6	old	_	ADJ	JJ	_	2	amod	_	_
+7	,	_	PUNCT	,	_	2	punct	_	_
+8	will	_	AUX	MD	_	9	aux	_	_
+9	join	_	VERB	VB	_	0	root	_	_
+10	the	_	DET	DT	_	11	det	_	_
+11	board	_	NOUN	NN	_	9	dobj	_	_
+12	as	_	ADP	IN	_	9	prep	_	_
+13	a	_	DET	DT	_	15	det	_	_
+14	nonexecutive	_	ADJ	JJ	_	15	amod	_	_
+15	director	_	NOUN	NN	_	12	pobj	_	_
+16	Nov.	_	PROPN	NNP	_	9	tmod	_	_
+17	29	_	NUM	CD	_	16	num	_	_
+18	.	_	PUNCT	.	_	9	punct	_	_
+
+1	Mr.	_	PROPN	NNP	_	2	nn	_	_
+2	Vinken	_	PROPN	NNP	_	4	nsubj	_	_
+3	is	_	VERB	VBZ	_	4	cop	_	_
+4	chairman	_	NOUN	NN	_	0	root	_	_
+5	of	_	ADP	IN	_	4	prep	_	_
+6	Elsevier	_	PROPN	NNP	_	7	nn	_	_
+7	N.V.	_	PROPN	NNP	_	5	pobj	_	_
+8	,	_	PUNCT	,	_	7	punct	_	_
+9	the	_	DET	DT	_	12	det	_	_
+10	Dutch	_	PROPN	NNP	_	12	nn	_	_
+11	publishing	_	VERB	VBG	_	12	amod	_	_
+12	group	_	NOUN	NN	_	7	appos	_	_
+13	.	_	PUNCT	.	_	4	punct	_	_
+

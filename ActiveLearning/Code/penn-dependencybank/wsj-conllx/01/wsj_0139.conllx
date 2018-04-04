@@ -1,0 +1,47 @@
+1	Hold	_	VERB	VB	_	0	root	_	_
+2	the	_	DET	DT	_	3	det	_	_
+3	Putty	_	NOUN	NN	_	1	dobj	_	_
+4	!	_	PUNCT	.	_	1	punct	_	_
+
+1	With	_	ADP	IN	_	11	prep	_	_
+2	lipsticks	_	NOUN	NNS	_	1	pobj	_	_
+3	,	_	PUNCT	,	_	2	punct	_	_
+4	liners	_	NOUN	NNS	_	2	conj	_	_
+5	,	_	PUNCT	,	_	2	punct	_	_
+6	lotions	_	NOUN	NNS	_	2	conj	_	_
+7	and	_	CONJ	CC	_	2	cc	_	_
+8	creams	_	NOUN	NNS	_	2	conj	_	_
+9	,	_	PUNCT	,	_	11	punct	_	_
+10	There	_	PRON	EX	_	11	expl	_	_
+11	are	_	VERB	VBP	_	0	root	_	_
+12	still	_	ADV	RB	_	11	advmod	_	_
+13	beauty	_	NOUN	NN	_	14	nn	_	_
+14	plans	_	NOUN	NNS	_	11	nsubj	_	_
+15	left	_	VERB	VBN	_	14	vmod	_	_
+16	to	_	PART	TO	_	17	aux	_	_
+17	tackle	_	VERB	VB	_	14	vmod	_	_
+18	:	_	PUNCT	:	_	11	punct	_	_
+19	But	_	CONJ	CC	_	27	cc	_	_
+20	as	_	SCONJ	IN	_	23	mark	_	_
+21	the	_	DET	DT	_	22	det	_	_
+22	years	_	NOUN	NNS	_	23	nsubj	_	_
+23	go	_	VERB	VBP	_	27	advcl	_	_
+24	by	_	ADP	IN	_	23	advmod	_	_
+25	,	_	PUNCT	,	_	27	punct	_	_
+26	it	_	PRON	PRP	_	27	nsubj	_	_
+27	seems	_	VERB	VBZ	_	11	parataxis	_	_
+28	That	_	SCONJ	IN	_	35	mark	_	_
+29	before	_	SCONJ	IN	_	31	mark	_	_
+30	I	_	PRON	PRP	_	31	nsubj	_	_
+31	paint	_	VERB	VBP	_	35	advcl	_	_
+32	,	_	PUNCT	,	_	35	punct	_	_
+33	I	_	PRON	PRP	_	35	nsubj	_	_
+34	should	_	AUX	MD	_	35	aux	_	_
+35	spackle	_	VERB	VB	_	27	ccomp	_	_
+36	.	_	PUNCT	.	_	11	punct	_	_
+
+1	--	_	PUNCT	:	_	3	punct	_	_
+2	Pat	_	PROPN	NNP	_	3	nn	_	_
+3	D'Amico	_	PROPN	NNP	_	0	root	_	_
+4	.	_	PUNCT	.	_	3	punct	_	_
+

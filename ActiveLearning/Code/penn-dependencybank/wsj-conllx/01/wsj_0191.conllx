@@ -1,0 +1,26 @@
+1	First	_	PROPN	NNP	_	3	nn	_	_
+2	Chicago	_	PROPN	NNP	_	3	nn	_	_
+3	Corp.	_	PROPN	NNP	_	4	nsubj	_	_
+4	said	_	VERB	VBD	_	0	root	_	_
+5	it	_	PRON	PRP	_	6	nsubj	_	_
+6	completed	_	VERB	VBD	_	4	ccomp	_	_
+7	its	_	PRON	PRP$	_	12	poss	_	_
+8	$	_	SYM	$	_	12	amod	_	_
+9	55.1	_	NUM	CD	_	10	number	_	_
+10	million	_	NUM	CD	_	8	num	_	_
+11	cash-and-stock	_	ADJ	JJ	_	12	amod	_	_
+12	acquisition	_	NOUN	NN	_	6	dobj	_	_
+13	of	_	ADP	IN	_	12	prep	_	_
+14	closely	_	ADV	RB	_	15	advmod	_	_
+15	held	_	VERB	VBN	_	18	amod	_	_
+16	Ravenswood	_	PROPN	NNP	_	18	nn	_	_
+17	Financial	_	PROPN	NNP	_	18	nn	_	_
+18	Corp.	_	PROPN	NNP	_	13	pobj	_	_
+19	,	_	PUNCT	,	_	18	punct	_	_
+20	another	_	DET	DT	_	24	det	_	_
+21	Chicago	_	PROPN	NNP	_	24	nn	_	_
+22	bank	_	NOUN	NN	_	24	nn	_	_
+23	holding	_	VERB	VBG	_	24	amod	_	_
+24	company	_	NOUN	NN	_	18	appos	_	_
+25	.	_	PUNCT	.	_	4	punct	_	_
+

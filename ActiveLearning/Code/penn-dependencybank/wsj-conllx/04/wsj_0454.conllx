@@ -1,0 +1,30 @@
+1	RADIO	_	NOUN	NN	_	0	root	_	_
+2	:	_	PUNCT	:	_	1	punct	_	_
+
+1	Viacom	_	PROPN	NNP	_	3	nn	_	_
+2	Broadcasting	_	PROPN	NNP	_	3	nn	_	_
+3	Inc.	_	PROPN	NNP	_	5	nsubj	_	_
+4	definitively	_	ADV	RB	_	5	advmod	_	_
+5	agreed	_	VERB	VBD	_	0	root	_	_
+6	to	_	PART	TO	_	7	aux	_	_
+7	acquire	_	VERB	VB	_	5	xcomp	_	_
+8	KOFY	_	PROPN	NNP	_	7	dobj	_	_
+9	-LRB-	_	PUNCT	-LRB-	_	10	punct	_	_
+10	AM	_	VERB	VBP	_	8	dep	_	_
+11	-RRB-	_	PUNCT	-RRB-	_	10	punct	_	_
+12	and	_	CONJ	CC	_	8	cc	_	_
+13	KOFY-FM	_	PROPN	NNP	_	8	conj	_	_
+14	in	_	ADP	IN	_	8	prep	_	_
+15	San	_	PROPN	NNP	_	16	nn	_	_
+16	Francisco	_	PROPN	NNP	_	14	pobj	_	_
+17	for	_	ADP	IN	_	7	prep	_	_
+18	about	_	ADV	RB	_	19	quantmod	_	_
+19	$	_	SYM	$	_	17	pobj	_	_
+20	19.5	_	NUM	CD	_	21	number	_	_
+21	million	_	NUM	CD	_	19	num	_	_
+22	from	_	ADP	IN	_	7	prep	_	_
+23	Pacific	_	PROPN	NNP	_	25	nn	_	_
+24	FM	_	PROPN	NNP	_	25	nn	_	_
+25	Inc	_	PROPN	NNP	_	22	pobj	_	_
+26	.	_	PUNCT	.	_	5	punct	_	_
+

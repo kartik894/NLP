@@ -1,0 +1,70 @@
+1	Idle	_	ADJ	JJ	_	2	amod	_	_
+2	Thought	_	NOUN	NN	_	0	root	_	_
+
+1	To	_	PART	TO	_	2	aux	_	_
+2	spend	_	VERB	VB	_	26	dep	_	_
+3	a	_	DET	DT	_	7	det	_	_
+4	carefree	_	ADJ	JJ	_	7	amod	_	_
+5	,	_	PUNCT	,	_	7	punct	_	_
+6	idle	_	ADJ	JJ	_	7	amod	_	_
+7	day	_	NOUN	NN	_	2	tmod	_	_
+8	,	_	PUNCT	,	_	2	punct	_	_
+9	When	_	ADV	WRB	_	11	advmod	_	_
+10	duty	_	NOUN	NN	_	11	nsubj	_	_
+11	calls	_	VERB	VBZ	_	14	advcl	_	_
+12	,	_	PUNCT	,	_	14	punct	_	_
+13	to	_	PART	TO	_	14	aux	_	_
+14	pay	_	VERB	VB	_	2	dep	_	_
+15	no	_	DET	DT	_	16	neg	_	_
+16	heed	_	NOUN	NN	_	14	dobj	_	_
+17	,	_	PUNCT	,	_	2	punct	_	_
+18	To	_	PART	TO	_	19	aux	_	_
+19	while	_	VERB	VB	_	2	dep	_	_
+20	the	_	DET	DT	_	22	det	_	_
+21	precious	_	ADJ	JJ	_	22	amod	_	_
+22	hours	_	NOUN	NNS	_	19	dobj	_	_
+23	away	_	ADV	RB	_	19	prt	_	_
+24	--	_	PUNCT	:	_	26	punct	_	_
+25	Character	_	NOUN	NN	_	26	nsubj	_	_
+26	is	_	VERB	VBZ	_	0	root	_	_
+27	what	_	PRON	WP	_	29	dobj	_	_
+28	you	_	PRON	PRP	_	29	nsubj	_	_
+29	need	_	VERB	VBP	_	26	ccomp	_	_
+30	.	_	PUNCT	.	_	26	punct	_	_
+
+1	--	_	PUNCT	:	_	3	punct	_	_
+2	May	_	PROPN	NNP	_	3	nn	_	_
+3	Richstone	_	PROPN	NNP	_	0	root	_	_
+4	.	_	PUNCT	.	_	3	punct	_	_
+
+1	Telecussed	_	VERB	VBD	_	0	root	_	_
+
+1	The	_	DET	DT	_	2	det	_	_
+2	guy	_	NOUN	NN	_	14	nsubjpass	_	_
+3	who	_	PRON	WP	_	4	nsubj	_	_
+4	throws	_	VERB	VBZ	_	2	rcmod	_	_
+5	an	_	DET	DT	_	6	det	_	_
+6	intercept	_	NOUN	NN	_	4	dobj	_	_
+7	'Cause	_	SCONJ	IN	_	10	mark	_	_
+8	his	_	PRON	PRP$	_	9	poss	_	_
+9	receiver	_	NOUN	NN	_	10	nsubj	_	_
+10	slips	_	VERB	VBZ	_	4	advcl	_	_
+11	Should	_	AUX	MD	_	14	aux	_	_
+12	somehow	_	ADV	RB	_	14	advmod	_	_
+13	be	_	AUX	VB	_	14	auxpass	_	_
+14	advised	_	VERB	VBN	_	0	root	_	_
+15	that	_	SCONJ	IN	_	20	mark	_	_
+16	we	_	PRON	PRP	_	20	nsubj	_	_
+17	At	_	ADP	IN	_	16	prep	_	_
+18	home	_	NOUN	NN	_	17	pobj	_	_
+19	can	_	AUX	MD	_	20	aux	_	_
+20	read	_	VERB	VB	_	14	ccomp	_	_
+21	his	_	PRON	PRP$	_	22	poss	_	_
+22	lips	_	NOUN	NNS	_	20	dobj	_	_
+23	.	_	PUNCT	.	_	14	punct	_	_
+
+1	--	_	PUNCT	:	_	3	punct	_	_
+2	Dick	_	PROPN	NNP	_	3	nn	_	_
+3	Emmons	_	PROPN	NNP	_	0	root	_	_
+4	.	_	PUNCT	.	_	3	punct	_	_
+

@@ -1,0 +1,95 @@
+1	Seasonal	_	PROPN	NNP	_	2	nn	_	_
+2	Stackup	_	PROPN	NNP	_	0	root	_	_
+
+1	Air-traffic	_	NOUN	NN	_	2	nn	_	_
+2	problems	_	NOUN	NNS	_	13	nsubj	_	_
+3	,	_	PUNCT	,	_	13	punct	_	_
+4	though	_	ADV	RB	_	7	advmod	_	_
+5	often	_	ADV	RB	_	7	advmod	_	_
+6	quite	_	ADV	RB	_	7	advmod	_	_
+7	grim	_	ADJ	JJ	_	13	advcl	_	_
+8	,	_	PUNCT	,	_	13	punct	_	_
+9	This	_	DET	DT	_	10	det	_	_
+10	time	_	NOUN	NN	_	13	tmod	_	_
+11	of	_	ADP	IN	_	10	prep	_	_
+12	year	_	NOUN	NN	_	11	pobj	_	_
+13	leave	_	VERB	VBP	_	0	root	_	_
+14	us	_	PRON	PRP	_	13	dobj	_	_
+15	in	_	ADP	IN	_	13	prep	_	_
+16	stitches	_	NOUN	NNS	_	15	pobj	_	_
+17	,	_	PUNCT	,	_	13	punct	_	_
+18	When	_	ADV	WRB	_	20	advmod	_	_
+19	we	_	PRON	PRP	_	20	nsubj	_	_
+20	notice	_	VERB	VBP	_	13	advcl	_	_
+21	around	_	ADP	IN	_	20	prep	_	_
+22	our	_	PRON	PRP$	_	23	poss	_	_
+23	airport	_	NOUN	NN	_	21	pobj	_	_
+24	A	_	DET	DT	_	26	det	_	_
+25	holding	_	NOUN	NN	_	26	nn	_	_
+26	pattern	_	NOUN	NN	_	20	dobj	_	_
+27	for	_	ADP	IN	_	26	prep	_	_
+28	witches	_	NOUN	NNS	_	27	pobj	_	_
+29	.	_	PUNCT	.	_	13	punct	_	_
+
+1	--	_	PUNCT	:	_	4	punct	_	_
+2	Edward	_	PROPN	NNP	_	4	nn	_	_
+3	F.	_	PROPN	NNP	_	4	nn	_	_
+4	Dempsey	_	PROPN	NNP	_	0	root	_	_
+5	.	_	PUNCT	.	_	4	punct	_	_
+
+1	Double-Jointed	_	PROPN	NNP	_	0	root	_	_
+
+1	``	_	PUNCT	``	_	10	punct	_	_
+2	I	_	PRON	PRP	_	3	nsubj	_	_
+3	am	_	VERB	VBP	_	10	ccomp	_	_
+4	beside	_	ADV	RB	_	3	prep	_	_
+5	myself	_	PRON	PRP	_	4	pobj	_	_
+6	,	_	PUNCT	,	_	10	punct	_	_
+7	''	_	PUNCT	''	_	10	punct	_	_
+8	I	_	PRON	PRP	_	10	nsubj	_	_
+9	've	_	AUX	VBP	_	10	aux	_	_
+10	said	_	VERB	VBD	_	0	root	_	_
+11	in	_	ADP	IN	_	10	prep	_	_
+12	moments	_	NOUN	NNS	_	11	pobj	_	_
+13	of	_	ADP	IN	_	12	prep	_	_
+14	heat	_	NOUN	NN	_	13	pobj	_	_
+15	,	_	PUNCT	,	_	10	punct	_	_
+16	Without	_	SCONJ	IN	_	10	prep	_	_
+17	ever	_	ADV	RB	_	18	advmod	_	_
+18	bothering	_	VERB	VBG	_	16	pcomp	_	_
+19	To	_	PART	TO	_	20	aux	_	_
+20	marvel	_	VERB	VB	_	18	xcomp	_	_
+21	at	_	ADP	IN	_	20	prep	_	_
+22	the	_	DET	DT	_	23	det	_	_
+23	feat	_	NOUN	NN	_	21	pobj	_	_
+24	.	_	PUNCT	.	_	10	punct	_	_
+
+1	--	_	PUNCT	:	_	3	punct	_	_
+2	Joshua	_	PROPN	NNP	_	3	nn	_	_
+3	Adams	_	PROPN	NNP	_	0	root	_	_
+4	.	_	PUNCT	.	_	3	punct	_	_
+
+1	Humility	_	PROPN	NNP	_	2	nn	_	_
+2	Helper	_	PROPN	NNP	_	0	root	_	_
+
+1	The	_	DET	DT	_	3	det	_	_
+2	ultimate	_	ADJ	JJ	_	3	amod	_	_
+3	blow	_	NOUN	NN	_	8	nsubj	_	_
+4	to	_	ADP	TO	_	3	prep	_	_
+5	the	_	DET	DT	_	6	det	_	_
+6	ego	_	NOUN	NN	_	4	pobj	_	_
+7	is	_	AUX	VBZ	_	8	aux	_	_
+8	learning	_	VERB	VBG	_	0	root	_	_
+9	that	_	SCONJ	IN	_	13	mark	_	_
+10	even	_	ADV	RB	_	12	advmod	_	_
+11	your	_	PRON	PRP$	_	12	poss	_	_
+12	mistakes	_	NOUN	NNS	_	13	nsubj	_	_
+13	go	_	VERB	VBP	_	8	ccomp	_	_
+14	unnoticed	_	ADJ	JJ	_	13	acomp	_	_
+15	.	_	PUNCT	.	_	8	punct	_	_
+
+1	--	_	PUNCT	:	_	3	punct	_	_
+2	Ivern	_	PROPN	NNP	_	3	nn	_	_
+3	Ball	_	PROPN	NNP	_	0	root	_	_
+4	.	_	PUNCT	.	_	3	punct	_	_
+

@@ -1,0 +1,35 @@
+1	Due	_	ADJ	JJ	_	21	prep	_	_
+2	to	_	ADP	TO	_	1	prep	_	_
+3	an	_	DET	DT	_	5	det	_	_
+4	editing	_	NOUN	NN	_	5	nn	_	_
+5	error	_	NOUN	NN	_	2	pobj	_	_
+6	,	_	PUNCT	,	_	21	punct	_	_
+7	a	_	DET	DT	_	8	det	_	_
+8	letter	_	NOUN	NN	_	21	nsubj	_	_
+9	to	_	ADP	TO	_	8	prep	_	_
+10	the	_	DET	DT	_	11	det	_	_
+11	editor	_	NOUN	NN	_	9	pobj	_	_
+12	in	_	ADP	IN	_	8	prep	_	_
+13	yesterday	_	NOUN	NN	_	15	poss	_	_
+14	's	_	PART	POS	_	13	possessive	_	_
+15	edition	_	NOUN	NN	_	12	pobj	_	_
+16	from	_	ADP	IN	_	8	prep	_	_
+17	Frederick	_	PROPN	NNP	_	19	nn	_	_
+18	H.	_	PROPN	NNP	_	19	nn	_	_
+19	Hallett	_	PROPN	NNP	_	16	pobj	_	_
+20	mistakenly	_	ADV	RB	_	21	advmod	_	_
+21	identified	_	VERB	VBD	_	0	root	_	_
+22	the	_	DET	DT	_	23	det	_	_
+23	NRDC	_	PROPN	NNP	_	21	dobj	_	_
+24	.	_	PUNCT	.	_	21	punct	_	_
+
+1	It	_	PRON	PRP	_	8	nsubj	_	_
+2	should	_	AUX	MD	_	8	aux	_	_
+3	be	_	VERB	VB	_	8	cop	_	_
+4	the	_	DET	DT	_	8	det	_	_
+5	Natural	_	PROPN	NNP	_	8	nn	_	_
+6	Resources	_	PROPN	NNPS	_	8	nn	_	_
+7	Defense	_	PROPN	NNP	_	8	nn	_	_
+8	Council	_	PROPN	NNP	_	0	root	_	_
+9	.	_	PUNCT	.	_	8	punct	_	_
+

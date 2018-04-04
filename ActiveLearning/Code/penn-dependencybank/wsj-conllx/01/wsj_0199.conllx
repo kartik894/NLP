@@ -1,0 +1,44 @@
+1	Trinity	_	PROPN	NNP	_	3	nn	_	_
+2	Industries	_	PROPN	NNPS	_	3	nn	_	_
+3	Inc.	_	PROPN	NNP	_	4	nsubj	_	_
+4	said	_	VERB	VBD	_	0	root	_	_
+5	it	_	PRON	PRP	_	6	nsubj	_	_
+6	reached	_	VERB	VBD	_	4	ccomp	_	_
+7	a	_	DET	DT	_	9	det	_	_
+8	preliminary	_	ADJ	JJ	_	9	amod	_	_
+9	agreement	_	NOUN	NN	_	6	dobj	_	_
+10	to	_	PART	TO	_	11	aux	_	_
+11	sell	_	VERB	VB	_	9	vmod	_	_
+12	500	_	NUM	CD	_	14	num	_	_
+13	railcar	_	NOUN	NN	_	14	nn	_	_
+14	platforms	_	NOUN	NNS	_	11	dobj	_	_
+15	to	_	ADP	TO	_	11	prep	_	_
+16	Trailer	_	PROPN	NNP	_	18	nn	_	_
+17	Train	_	PROPN	NNP	_	18	nn	_	_
+18	Co.	_	PROPN	NNP	_	15	pobj	_	_
+19	of	_	ADP	IN	_	18	prep	_	_
+20	Chicago	_	PROPN	NNP	_	19	pobj	_	_
+21	.	_	PUNCT	.	_	4	punct	_	_
+
+1	Terms	_	NOUN	NNS	_	4	nsubjpass	_	_
+2	were	_	AUX	VBD	_	4	auxpass	_	_
+3	n't	_	PART	RB	_	4	neg	_	_
+4	disclosed	_	VERB	VBN	_	0	root	_	_
+5	.	_	PUNCT	.	_	4	punct	_	_
+
+1	Trinity	_	PROPN	NNP	_	2	nsubj	_	_
+2	said	_	VERB	VBD	_	0	root	_	_
+3	it	_	PRON	PRP	_	4	nsubj	_	_
+4	plans	_	VERB	VBZ	_	2	ccomp	_	_
+5	to	_	PART	TO	_	6	aux	_	_
+6	begin	_	VERB	VB	_	4	xcomp	_	_
+7	delivery	_	NOUN	NN	_	6	dobj	_	_
+8	in	_	ADP	IN	_	6	prep	_	_
+9	the	_	DET	DT	_	11	det	_	_
+10	first	_	ADJ	JJ	_	11	amod	_	_
+11	quarter	_	NOUN	NN	_	8	pobj	_	_
+12	of	_	ADP	IN	_	11	prep	_	_
+13	next	_	ADJ	JJ	_	14	amod	_	_
+14	year	_	NOUN	NN	_	12	pobj	_	_
+15	.	_	PUNCT	.	_	2	punct	_	_
+

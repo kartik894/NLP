@@ -1,0 +1,39 @@
+1	Westinghouse	_	PROPN	NNP	_	3	nn	_	_
+2	Electric	_	PROPN	NNP	_	3	nn	_	_
+3	Corp.	_	PROPN	NNP	_	4	nsubj	_	_
+4	said	_	VERB	VBD	_	0	root	_	_
+5	it	_	PRON	PRP	_	7	nsubj	_	_
+6	will	_	AUX	MD	_	7	aux	_	_
+7	buy	_	VERB	VB	_	4	ccomp	_	_
+8	Shaw-Walker	_	PROPN	NNP	_	9	nn	_	_
+9	Co	_	PROPN	NNP	_	7	dobj	_	_
+10	.	_	PUNCT	.	_	4	punct	_	_
+
+1	Terms	_	NOUN	NNS	_	4	nsubjpass	_	_
+2	were	_	AUX	VBD	_	4	auxpass	_	_
+3	n't	_	PART	RB	_	4	neg	_	_
+4	disclosed	_	VERB	VBN	_	0	root	_	_
+5	.	_	PUNCT	.	_	4	punct	_	_
+
+1	Shaw-Walker	_	PROPN	NNP	_	9	nsubj	_	_
+2	,	_	PUNCT	,	_	1	punct	_	_
+3	based	_	VERB	VBN	_	1	vmod	_	_
+4	in	_	ADP	IN	_	3	prep	_	_
+5	Muskegon	_	PROPN	NNP	_	4	pobj	_	_
+6	,	_	PUNCT	,	_	5	punct	_	_
+7	Mich.	_	PROPN	NNP	_	5	appos	_	_
+8	,	_	PUNCT	,	_	1	punct	_	_
+9	makes	_	VERB	VBZ	_	0	root	_	_
+10	metal	_	NOUN	NN	_	11	nn	_	_
+11	files	_	NOUN	NNS	_	9	dobj	_	_
+12	and	_	CONJ	CC	_	11	cc	_	_
+13	desks	_	NOUN	NNS	_	11	conj	_	_
+14	,	_	PUNCT	,	_	11	punct	_	_
+15	and	_	CONJ	CC	_	11	cc	_	_
+16	seating	_	NOUN	NN	_	11	conj	_	_
+17	and	_	CONJ	CC	_	16	cc	_	_
+18	office	_	NOUN	NN	_	20	nn	_	_
+19	systems	_	NOUN	NNS	_	20	nn	_	_
+20	furniture	_	NOUN	NN	_	16	conj	_	_
+21	.	_	PUNCT	.	_	9	punct	_	_
+

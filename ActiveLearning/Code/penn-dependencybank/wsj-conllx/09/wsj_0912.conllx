@@ -1,0 +1,55 @@
+1	Rochester	_	PROPN	NNP	_	3	nn	_	_
+2	Telephone	_	PROPN	NNP	_	3	nn	_	_
+3	Corp.	_	PROPN	NNP	_	4	nsubj	_	_
+4	said	_	VERB	VBD	_	0	root	_	_
+5	it	_	PRON	PRP	_	6	nsubj	_	_
+6	agreed	_	VERB	VBD	_	4	ccomp	_	_
+7	to	_	PART	TO	_	8	aux	_	_
+8	buy	_	VERB	VB	_	6	xcomp	_	_
+9	Viroqua	_	PROPN	NNP	_	11	nn	_	_
+10	Telephone	_	PROPN	NNP	_	11	nn	_	_
+11	Co.	_	PROPN	NNP	_	8	dobj	_	_
+12	of	_	ADP	IN	_	11	prep	_	_
+13	Viroqua	_	PROPN	NNP	_	12	pobj	_	_
+14	,	_	PUNCT	,	_	13	punct	_	_
+15	Wis	_	PROPN	NNP	_	13	appos	_	_
+16	.	_	PUNCT	.	_	4	punct	_	_
+
+1	Terms	_	NOUN	NNS	_	4	nsubjpass	_	_
+2	were	_	AUX	VBD	_	4	auxpass	_	_
+3	n't	_	PART	RB	_	4	neg	_	_
+4	disclosed	_	VERB	VBN	_	0	root	_	_
+5	.	_	PUNCT	.	_	4	punct	_	_
+
+1	Rochester	_	PROPN	NNP	_	3	nsubj	_	_
+2	will	_	AUX	MD	_	3	aux	_	_
+3	exchange	_	VERB	VB	_	0	root	_	_
+4	shares	_	NOUN	NNS	_	3	dobj	_	_
+5	of	_	ADP	IN	_	4	prep	_	_
+6	its	_	PRON	PRP$	_	8	poss	_	_
+7	common	_	ADJ	JJ	_	8	amod	_	_
+8	stock	_	NOUN	NN	_	5	pobj	_	_
+9	for	_	ADP	IN	_	3	prep	_	_
+10	all	_	DET	DT	_	11	det	_	_
+11	shares	_	NOUN	NNS	_	9	pobj	_	_
+12	outstanding	_	ADJ	JJ	_	11	amod	_	_
+13	of	_	ADP	IN	_	11	prep	_	_
+14	Viroqua	_	PROPN	NNP	_	15	nn	_	_
+15	Telephone	_	PROPN	NNP	_	13	pobj	_	_
+16	,	_	PUNCT	,	_	15	punct	_	_
+17	a	_	DET	DT	_	19	det	_	_
+18	family-owned	_	ADJ	JJ	_	19	amod	_	_
+19	company	_	NOUN	NN	_	15	appos	_	_
+20	.	_	PUNCT	.	_	3	punct	_	_
+
+1	Viroqua	_	PROPN	NNP	_	2	nsubj	_	_
+2	serves	_	VERB	VBZ	_	0	root	_	_
+3	about	_	ADP	IN	_	4	quantmod	_	_
+4	3,000	_	NUM	CD	_	6	num	_	_
+5	access	_	NOUN	NN	_	6	nn	_	_
+6	lines	_	NOUN	NNS	_	2	dobj	_	_
+7	in	_	ADP	IN	_	6	prep	_	_
+8	western	_	ADJ	JJ	_	9	amod	_	_
+9	Wisconsin	_	PROPN	NNP	_	7	pobj	_	_
+10	.	_	PUNCT	.	_	2	punct	_	_
+

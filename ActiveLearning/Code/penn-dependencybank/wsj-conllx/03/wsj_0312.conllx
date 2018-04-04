@@ -1,0 +1,77 @@
+1	Trial	_	NOUN	NN	_	0	root	_	_
+2	and	_	CONJ	CC	_	1	cc	_	_
+3	Terror	_	NOUN	NN	_	1	conj	_	_
+
+1	At	_	ADP	IN	_	4	prep	_	_
+2	times	_	NOUN	NNS	_	1	pobj	_	_
+3	I	_	PRON	PRP	_	4	nsubj	_	_
+4	sequester	_	VERB	VBP	_	0	root	_	_
+5	my	_	PRON	PRP$	_	6	poss	_	_
+6	mind	_	NOUN	NN	_	4	dobj	_	_
+7	When	_	ADV	WRB	_	10	advmod	_	_
+8	I	_	PRON	PRP	_	10	nsubj	_	_
+9	must	_	AUX	MD	_	10	aux	_	_
+10	think	_	VERB	VB	_	4	advcl	_	_
+11	with	_	ADP	IN	_	10	prep	_	_
+12	precision	_	NOUN	NN	_	11	pobj	_	_
+13	,	_	PUNCT	,	_	4	punct	_	_
+14	Detached	_	VERB	VBN	_	20	dep	_	_
+15	from	_	ADP	IN	_	14	prep	_	_
+16	all	_	DET	DT	_	18	det	_	_
+17	other	_	ADJ	JJ	_	18	amod	_	_
+18	thoughts	_	NOUN	NNS	_	15	pobj	_	_
+19	While	_	SCONJ	IN	_	20	mark	_	_
+20	trying	_	VERB	VBG	_	4	dep	_	_
+21	to	_	PART	TO	_	22	aux	_	_
+22	reach	_	VERB	VB	_	20	xcomp	_	_
+23	a	_	DET	DT	_	24	det	_	_
+24	decision	_	NOUN	NN	_	22	dobj	_	_
+25	.	_	PUNCT	.	_	4	punct	_	_
+
+1	But	_	CONJ	CC	_	5	cc	_	_
+2	often	_	ADV	RB	_	5	advmod	_	_
+3	nothing	_	PRON	NN	_	5	nsubjpass	_	_
+4	's	_	VERB	VBZ	_	5	auxpass	_	_
+5	resolved	_	VERB	VBN	_	0	root	_	_
+6	,	_	PUNCT	,	_	5	punct	_	_
+7	To	_	ADP	TO	_	5	prep	_	_
+8	my	_	PRON	PRP$	_	9	poss	_	_
+9	frustration	_	NOUN	NN	_	7	pobj	_	_
+10	and	_	CONJ	CC	_	9	cc	_	_
+11	fury	_	NOUN	NN	_	9	conj	_	_
+12	:	_	PUNCT	:	_	5	punct	_	_
+13	With	_	SCONJ	IN	_	14	mark	_	_
+14	pros	_	NOUN	NNS	_	21	advcl	_	_
+15	and	_	CONJ	CC	_	14	cc	_	_
+16	cons	_	NOUN	NNS	_	14	conj	_	_
+17	in	_	ADP	IN	_	14	dep	_	_
+18	limbo	_	NOUN	NN	_	17	pobj	_	_
+19	,	_	PUNCT	,	_	21	punct	_	_
+20	I	_	PRON	PRP	_	21	nsubj	_	_
+21	feel	_	VERB	VBP	_	5	parataxis	_	_
+22	like	_	ADP	IN	_	21	prep	_	_
+23	a	_	DET	DT	_	25	det	_	_
+24	hung	_	ADJ	JJ	_	25	amod	_	_
+25	jury	_	NOUN	NN	_	22	pobj	_	_
+26	.	_	PUNCT	.	_	5	punct	_	_
+
+1	--	_	PUNCT	:	_	4	punct	_	_
+2	Arnold	_	PROPN	NNP	_	4	nn	_	_
+3	J.	_	PROPN	NNP	_	4	nn	_	_
+4	Zarett	_	PROPN	NNP	_	0	root	_	_
+5	.	_	PUNCT	.	_	4	punct	_	_
+
+1	Daffynition	_	NOUN	NN	_	0	root	_	_
+
+1	Rodeo	_	NOUN	NN	_	2	nn	_	_
+2	applause	_	NOUN	NN	_	0	root	_	_
+3	:	_	PUNCT	:	_	2	punct	_	_
+4	broncs	_	NOUN	NNS	_	5	nn	_	_
+5	cheer	_	NOUN	NN	_	2	dep	_	_
+6	.	_	PUNCT	.	_	2	punct	_	_
+
+1	--	_	PUNCT	:	_	3	punct	_	_
+2	Marvin	_	PROPN	NNP	_	3	nn	_	_
+3	Alisky	_	PROPN	NNP	_	0	root	_	_
+4	.	_	PUNCT	.	_	3	punct	_	_
+

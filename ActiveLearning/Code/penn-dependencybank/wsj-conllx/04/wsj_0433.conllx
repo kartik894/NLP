@@ -1,0 +1,49 @@
+1	Your	_	PRON	PRP$	_	5	poss	_	_
+2	Oct.	_	PROPN	NNP	_	5	nn	_	_
+3	4	_	NUM	CD	_	5	num	_	_
+4	front	_	ADJ	JJ	_	5	amod	_	_
+5	page	_	NOUN	NN	_	6	nsubj	_	_
+6	noted	_	VERB	VBD	_	0	root	_	_
+7	that	_	SCONJ	IN	_	10	mark	_	_
+8	British	_	ADJ	JJ	_	9	amod	_	_
+9	lawyers	_	NOUN	NNS	_	10	nsubj	_	_
+10	have	_	VERB	VBP	_	6	ccomp	_	_
+11	to	_	PART	TO	_	12	aux	_	_
+12	wear	_	VERB	VB	_	10	xcomp	_	_
+13	wigs	_	NOUN	NNS	_	12	dobj	_	_
+14	in	_	ADP	IN	_	12	prep	_	_
+15	court	_	NOUN	NN	_	14	pobj	_	_
+16	and	_	CONJ	CC	_	10	cc	_	_
+17	that	_	SCONJ	IN	_	21	mark	_	_
+18	these	_	DET	DT	_	19	det	_	_
+19	wigs	_	NOUN	NNS	_	21	nsubjpass	_	_
+20	are	_	AUX	VBP	_	21	auxpass	_	_
+21	made	_	VERB	VBN	_	10	conj	_	_
+22	from	_	ADP	IN	_	21	prep	_	_
+23	horses	_	NOUN	NNS	_	25	poss	_	_
+24	'	_	PART	POS	_	23	possessive	_	_
+25	tails	_	NOUN	NNS	_	22	pobj	_	_
+26	.	_	PUNCT	.	_	6	punct	_	_
+
+1	Do	_	AUX	VBP	_	3	aux	_	_
+2	you	_	PRON	PRP	_	3	nsubj	_	_
+3	think	_	VERB	VB	_	0	root	_	_
+4	the	_	DET	DT	_	5	det	_	_
+5	British	_	NOUN	NNS	_	6	nsubj	_	_
+6	know	_	VERB	VBP	_	3	ccomp	_	_
+7	something	_	PRON	NN	_	6	dobj	_	_
+8	that	_	ADP	IN	_	10	dobj	_	_
+9	we	_	PRON	PRP	_	10	nsubj	_	_
+10	do	_	VERB	VBP	_	7	rcmod	_	_
+11	n't	_	PART	RB	_	10	neg	_	_
+12	?	_	PUNCT	.	_	3	punct	_	_
+
+1	Yale	_	PROPN	NNP	_	3	nn	_	_
+2	Jay	_	PROPN	NNP	_	3	nn	_	_
+3	Lubkin	_	PROPN	NNP	_	0	root	_	_
+
+1	Owings	_	PROPN	NNP	_	0	root	_	_
+2	,	_	PUNCT	,	_	1	punct	_	_
+3	Md	_	PROPN	NNP	_	1	appos	_	_
+4	.	_	PUNCT	.	_	1	punct	_	_
+

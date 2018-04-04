@@ -1,0 +1,27 @@
+1	Rudolph	_	PROPN	NNP	_	2	nn	_	_
+2	Agnew	_	PROPN	NNP	_	17	nsubjpass	_	_
+3	,	_	PUNCT	,	_	2	punct	_	_
+4	55	_	NUM	CD	_	5	num	_	_
+5	years	_	NOUN	NNS	_	6	npadvmod	_	_
+6	old	_	ADJ	JJ	_	2	amod	_	_
+7	and	_	CONJ	CC	_	6	cc	_	_
+8	former	_	ADJ	JJ	_	9	amod	_	_
+9	chairman	_	NOUN	NN	_	6	conj	_	_
+10	of	_	ADP	IN	_	9	prep	_	_
+11	Consolidated	_	PROPN	NNP	_	14	nn	_	_
+12	Gold	_	PROPN	NNP	_	14	nn	_	_
+13	Fields	_	PROPN	NNP	_	14	nn	_	_
+14	PLC	_	PROPN	NNP	_	10	pobj	_	_
+15	,	_	PUNCT	,	_	2	punct	_	_
+16	was	_	AUX	VBD	_	17	auxpass	_	_
+17	named	_	VERB	VBN	_	0	root	_	_
+18	a	_	DET	DT	_	20	det	_	_
+19	nonexecutive	_	ADJ	JJ	_	20	amod	_	_
+20	director	_	NOUN	NN	_	17	xcomp	_	_
+21	of	_	ADP	IN	_	20	prep	_	_
+22	this	_	DET	DT	_	25	det	_	_
+23	British	_	ADJ	JJ	_	25	amod	_	_
+24	industrial	_	ADJ	JJ	_	25	amod	_	_
+25	conglomerate	_	NOUN	NN	_	21	pobj	_	_
+26	.	_	PUNCT	.	_	17	punct	_	_
+

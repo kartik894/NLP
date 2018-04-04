@@ -1,0 +1,35 @@
+1	THE	_	DET	DT	_	3	det	_	_
+2	R.H.	_	PROPN	NNP	_	3	nn	_	_
+3	MACY	_	PROPN	NNP	_	9	nsubj	_	_
+4	&	_	CONJ	CC	_	3	cc	_	_
+5	CO	_	PROPN	NNP	_	8	nn	_	_
+6	.	_	PUNCT	.	_	8	punct	_	_
+7	department-store	_	NOUN	NN	_	8	nn	_	_
+8	chain	_	NOUN	NN	_	3	conj	_	_
+9	is	_	VERB	VBZ	_	0	root	_	_
+10	n't	_	PART	RB	_	9	neg	_	_
+11	for	_	ADP	IN	_	9	prep	_	_
+12	sale	_	NOUN	NN	_	11	pobj	_	_
+13	.	_	PUNCT	.	_	9	punct	_	_
+
+1	In	_	ADP	IN	_	9	prep	_	_
+2	yesterday	_	NOUN	NN	_	4	poss	_	_
+3	's	_	PART	POS	_	2	possessive	_	_
+4	edition	_	NOUN	NN	_	1	pobj	_	_
+5	,	_	PUNCT	,	_	9	punct	_	_
+6	it	_	PRON	PRP	_	9	nsubjpass	_	_
+7	was	_	AUX	VBD	_	9	auxpass	_	_
+8	incorrectly	_	ADV	RB	_	9	advmod	_	_
+9	included	_	VERB	VBN	_	0	root	_	_
+10	with	_	ADP	IN	_	9	prep	_	_
+11	a	_	DET	DT	_	12	det	_	_
+12	list	_	NOUN	NN	_	10	pobj	_	_
+13	of	_	ADP	IN	_	12	prep	_	_
+14	New	_	PROPN	NNP	_	16	nn	_	_
+15	York	_	PROPN	NNP	_	16	nn	_	_
+16	chains	_	NOUN	NNS	_	13	pobj	_	_
+17	up	_	ADP	IN	_	16	prep	_	_
+18	for	_	ADP	IN	_	17	pcomp	_	_
+19	sale	_	NOUN	NN	_	18	pobj	_	_
+20	.	_	PUNCT	.	_	9	punct	_	_
+
