@@ -3,7 +3,7 @@ javac -cp .:stanford-corenlp.jar src/deParser/DependencyParserAPI.java
 javac -cp .:stanford-corenlp.jar src/deParser/DependencyParserAPIUsage.java
 
 # To run,
-The arguments are <seed-set> <unlabeled-set> <test-set> <number-of-seed-sentences> <number-of-unlabeled-sentences> <embedding-path> <model-path> <test-annotations-path> <mode - {random, length, raw, margin}>
+The arguments are [seed-set] [unlabeled-set] [test-set] [number-of-seed-sentences] [number-of-unlabeled-sentences] [embedding-path] [model-path] [test-annotations-path] [mode - {random, length, raw, margin}]
 java -cp .:stanford-corenlp.jar deParser.DependencyParserAPIUsage \
 penn-dependencybank/wsj_initial.conllx \ 
 penn-dependencybank/wsj_unlabeled.conllx \ 
