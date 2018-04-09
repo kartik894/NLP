@@ -1,14 +1,14 @@
 package deParser;
 
-import edu.stanford.nlp.parser.nndep.DependencyParser;
-import edu.stanford.nlp.parser.nndep.DependencyTree;
-import edu.stanford.nlp.util.ScoredObject;
-import edu.stanford.nlp.util.ScoredComparator;
-import edu.stanford.nlp.util.Pair;
-
-import java.util.Properties;
-import java.util.List;
-import java.util.ArrayList;
+//import edu.stanford.nlp.parser.nndep.DependencyParser;
+//import edu.stanford.nlp.parser.nndep.DependencyTree;
+//import edu.stanford.nlp.util.ScoredObject;
+//import edu.stanford.nlp.util.ScoredComparator;
+//import edu.stanford.nlp.util.Pair;
+//
+//import java.util.Properties;
+//import java.util.List;
+//import java.util.ArrayList;
 
 /**
  * Created by Kartik S on 3/31/18.
@@ -17,60 +17,34 @@ import java.util.ArrayList;
 public class DependencyParserAPIUsage {
     public static void main(String[] args) {
         // Seed Data path
-        String initPath = "penn-dependencybank/wsj_initial.conllx";
+        String initPath = args[0]; // "penn-dependencybank/wsj_initial.conllx";
         // Train Data path
-        String unlabeledPath = "penn-dependencybank/wsj_unlabeled.conllx";
+        String unlabeledPath = args[1]; // "penn-dependencybank/wsj_unlabeled.conllx";
         // Test Data Path
-        String testPath = "penn-dependencybank/wsj_test.conllx";
+        String testPath = args[2]; // "penn-dependencybank/wsj_test.conllx";
+        // number of seed sentences
+        int seed_size = Integer.parseInt(args[3]);
+        // number of unlabeled sentences
+        int train_size = Integer.parseInt(args[4]);
         // Path to embedding vectors file
-        String embeddingPath = "penn-dependencybank/en-cw.txt";
+        String embeddingPath = args[5]; // "penn-dependencybank/en-cw.txt";
         // Path where model is to be saved
-        String modelPath = "outputs/model1";
+        String modelPath = args[6]; // "outputs/model_5004";
         // Path where test data annotations are stored
-        String testAnnotationsPath = "outputs/test_annotation.conllx";
+        String testAnnotationsPath = args[7]; // = "outputs/test_annotation.conllx";
+        // mode of active learning
+        String mode = args[8];
         
         DependencyParserAPI elem = new DependencyParserAPI(initPath, unlabeledPath, testPath, embeddingPath, modelPath, testAnnotationsPath);
-        
-        elem.RandomTrain(50, 5000);
-//        ArrayList< Pair<String, Integer> > ans = elem.loadSentencesFromFile(initPath, 6);
-//        
-//        elem.writeSentencesToFile(ans, "penn-dependencybank/yolo.conllx");
+        if(mode.equalsIgnoreCase("random"))
+        	elem.RandomTrain(seed_size, train_size);
+        else if(mode.equalsIgnoreCase("length"))
+        	elem.LongSentenceTrain(seed_size, train_size);
+        else if(mode.equalsIgnoreCase("raw"))
+        	elem.RawScoreTrain(seed_size, train_size);
+        else if(mode.equalsIgnoreCase("margin"))
+        	elem.MarginScoreTrain(seed_size, train_size);
 
-//        // Configuring propreties for the parser. A full list of properties can be found
-//        // here https://nlp.stanford.edu/software/nndep.shtml
-//        Properties prop = new Properties();
-//        prop.setProperty("maxIter", "50");
-//        DependencyParser p = new DependencyParser(prop);
-//
-//        // Argument 1 - Training Path
-//        // Argument 2 - Dev Path (can be null)
-//        // Argument 3 - Path where model is saved
-//        // Argument 4 - Path to embedding vectors (can be null)
-//        p.train(trainPath, null, modelPath, embeddingPath);
-//
-//        // Load a saved path
-//        DependencyParser model = DependencyParser.loadFromModelFile(modelPath);
-//
-//        // Test model on test data, write annotations to testAnnotationsPath
-//        System.out.println(model.testCoNLL(testPath, testAnnotationsPath));
-//
-//        // returns parse trees for all the sentences in test data using model, this function does not come with default parser and has been written for you
-//        List<DependencyTree> predictedParses = model.testCoNLLProb(testPath);
-//
-//        // By default NN parser does not give you any probability 
-//        // https://cs.stanford.edu/~danqi/papers/emnlp2014.pdf explains that the parsing is performed by picking the transition with the highest output in the final layer 
-//        // To get a certainty measure from the final layer output layer, we take use a softmax function.
-//        // For Raw Probability score We sum the logs of probability of every transition taken in the parse tree to get the following metric
-//        // For Margin Probability score we sum the log of margin between probabilities assigned to two top transitions at every step
-//        // Following line prints that probability metrics for 12-th sentence in test data
-//        // all probabilities in log space to reduce numerical errors. Adjust your code accordingly!
-//        System.out.printf("Raw Probability: %f\n",predictedParses.get(12).RawScore);
-//        System.out.printf("Margin Probability: %f\n",predictedParses.get(12).MarginScore);
-//
-//
-//        // You probably want to use the ScoredObject and scoredComparator classes for this assignment
-//        // https://nlp.stanford.edu/nlp/javadoc/javanlp-3.6.0/edu/stanford/nlp/util/ScoredObject.html
-//        // https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/util/ScoredComparator.html
 
     }
 }

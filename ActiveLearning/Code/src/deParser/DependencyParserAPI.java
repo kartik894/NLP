@@ -7,6 +7,7 @@ import edu.stanford.nlp.util.Pair;
 import java.util.Properties;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -14,6 +15,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
+
+/**
+ * Created by Kartik S on 3/31/18.
+ */
 
 public class DependencyParserAPI {
 	
@@ -42,7 +47,7 @@ public class DependencyParserAPI {
 		// Configuring properties for the parser. A full list of properties can be found
         // here https://nlp.stanford.edu/software/nndep.shtml
         Properties prop = new Properties();
-        prop.setProperty("maxIter", "20");
+        prop.setProperty("maxIter", "500");
         DependencyParser p = new DependencyParser(prop);
 
         // Argument 1 - Training Path
@@ -120,7 +125,7 @@ public class DependencyParserAPI {
 			bw = new BufferedWriter(fw);
 			bw.write(content);
 
-			System.out.println("Done");
+			// System.out.println("Done");
 			
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -154,17 +159,16 @@ public class DependencyParserAPI {
 		String trainPath = "penn-dependencybank/random_train.conllx";
 		ArrayList< Pair <String, Integer> > trainSentenceList = loadSentencesFromFile(unlabeledPath, no_of_unlabeled_sentences);
 		
-		System.out.printf("Initially, seed size = %d, training size = %d", seedSentenceList.size(), trainSentenceList.size());
 		writeSentencesToFile(trainSentenceList, trainPath);
 		
 		List<DependencyTree> predictedParses = TrainAndTest(seedPath, trainPath);
 		
-		int no_of_sentences = predictedParses.size();
-		
+		int no_of_sentences = trainSentenceList.size();
+		int ans = 0, iterations = 0;
 		Random rand;
-		while(!trainSentenceList.isEmpty()) {
+		while(!trainSentenceList.isEmpty() && iterations < 20) {
 			int no_of_words = 0;
-			while(no_of_words <= 1500) {
+			while(no_of_words <= 1500 && no_of_sentences > 0) {
 				rand = new Random();
 				int val = rand.nextInt(no_of_sentences);
 				// System.out.println(val);
@@ -173,31 +177,266 @@ public class DependencyParserAPI {
 				trainSentenceList.remove(val);
 				no_of_words += elem.second();
 				no_of_sentences -= 1;
+				ans += 1;
 			}
-			// System.out.printf("Number of words = %d. Number of Sentences = %d\nseed size = %d, training size = %d\n", no_of_words, ans, seedSentenceList.size(), trainSentenceList.size());
+			if(no_of_sentences <= 0) break;
+			System.out.printf("Number of words = %d. Number of Sentences = %d\nseed size = %d, training size = %d\n", no_of_words, ans, seedSentenceList.size(), trainSentenceList.size());
 			
 			writeSentencesToFile(seedSentenceList, seedPath);
 			writeSentencesToFile(trainSentenceList, trainPath);
 			predictedParses = TrainAndTest(seedPath, trainPath);
-			no_of_sentences = predictedParses.size();
-			
+			no_of_sentences = trainSentenceList.size();
+			iterations++;
 		}
-		
+		predictedParses = TrainAndTest(seedPath, testPath);
 	}
 	
 	// Train by picking 1500 words with least raw score
-	void RawScoreTrain() {
+	void RawScoreTrain(int no_of_seed_sentences, int no_of_unlabeled_sentences) {
+		// load seed data
+		String seedPath = "penn-dependencybank/rawScore_seed.conllx";
+		ArrayList< Pair <String, Integer> > seedSentenceList = loadSentencesFromFile(initPath, no_of_seed_sentences);
+		writeSentencesToFile(seedSentenceList, seedPath);
 		
+		// load training data
+		String trainPath = "penn-dependencybank/rawScore_train.conllx";
+		ArrayList< Pair <String, Integer> > trainSentenceList = loadSentencesFromFile(unlabeledPath, no_of_unlabeled_sentences);
+		
+		writeSentencesToFile(trainSentenceList, trainPath);
+		
+		List<DependencyTree> predictedParses = TrainAndTest(seedPath, trainPath);
+		
+		ArrayList< Pair<Integer, Double> > rawScoreToSentenceMap = new ArrayList<Pair <Integer, Double> > ();
+		
+		for(int i = 0; i < predictedParses.size(); i++) {
+//			System.out.println(predictedParses.get(i).RawScore);
+//			System.out.println(trainSentenceList.get(i).second());
+//			System.out.println(predictedParses.get(i).RawScore * 0.5/trainSentenceList.get(i).second());
+			rawScoreToSentenceMap.add(new Pair<Integer, Double> (i, predictedParses.get(i).RawScore * 0.5/trainSentenceList.get(i).second()));
+		}
+		
+		rawScoreToSentenceMap.sort(new Comparator<Pair<Integer, Double>>() {
+	        @Override
+	        public int compare(Pair<Integer, Double> o1, Pair<Integer, Double> o2) {
+	            if (o1.second() > o2.second()) {
+	                return 1;
+	            } else {
+	                return -1;
+	            }
+	        }
+	    });
+		// Check if sorted
+//		for(Pair<Integer, Double> elem : rawScoreToSentenceMap) {
+//			System.out.println(elem.first() + "\n" + elem.second());
+//		}
+		ArrayList<Integer> toDel = new ArrayList<Integer> ();
+		int no_of_sentences = trainSentenceList.size();
+		int ans = 0, iterations = 0;
+		while(!trainSentenceList.isEmpty() && iterations < 20) {
+			int no_of_words = 0;
+			int j = 0;
+			toDel.clear();
+			while(no_of_words <= 1500 && no_of_sentences > 0) {
+				// rand = new Random();
+				// int val = rand.nextInt(no_of_sentences);
+				// System.out.println(val);
+				Pair <String, Integer> elem = trainSentenceList.get(rawScoreToSentenceMap.get(j).first());
+				seedSentenceList.add(elem);
+				toDel.add(rawScoreToSentenceMap.get(j).first());
+				// trainSentenceList.remove((int)rawScoreToSentenceMap.get(j).first());
+				// System.out.printf("rawScore least index = %d\n", rawScoreToSentenceMap.get(j).first());
+				no_of_words += elem.second();
+				no_of_sentences -= 1;
+				ans += 1;
+				j += 1;
+			}
+			toDel.sort(new Comparator<Integer> () {
+				public int compare(Integer a, Integer b) {
+					if(a < b) return 1;
+					else if (a == b) return 0;
+					else return -1;
+				}
+			});
+			for(int x : toDel) {
+				trainSentenceList.remove(x);
+			}
+			if(no_of_sentences <= 0) break;
+			System.out.printf("Number of words = %d. Number of Sentences = %d\nseed size = %d, training size = %d\n", no_of_words, ans, seedSentenceList.size(), trainSentenceList.size());
+			
+			writeSentencesToFile(seedSentenceList, seedPath);
+			writeSentencesToFile(trainSentenceList, trainPath);
+			predictedParses = TrainAndTest(seedPath, trainPath);
+			no_of_sentences = trainSentenceList.size();
+			
+			rawScoreToSentenceMap.clear();
+			
+			for(int i = 0; i < predictedParses.size(); i++) {
+				rawScoreToSentenceMap.add(new Pair<Integer, Double> (i, predictedParses.get(i).RawScore * 0.5 / trainSentenceList.get(i).second()));
+			}
+			rawScoreToSentenceMap.sort(new Comparator<Pair<Integer, Double>>() {
+		        @Override
+		        public int compare(Pair<Integer, Double> o1, Pair<Integer, Double> o2) {
+		            if (o1.second() > o2.second()) {
+		                return 1;
+		            } else {
+		                return -1;
+		            }
+		        }
+		    });
+			iterations++;
+			
+		}
+		predictedParses = TrainAndTest(seedPath, testPath);
 	}
 	
 	// Train by picking 1500 words with least margin score
-	void MarginScoreTrain() {
+	void MarginScoreTrain(int no_of_seed_sentences, int no_of_unlabeled_sentences) {
+		// load seed data
+		String seedPath = "penn-dependencybank/marginScore_seed.conllx";
+		ArrayList< Pair <String, Integer> > seedSentenceList = loadSentencesFromFile(initPath, no_of_seed_sentences);
+		writeSentencesToFile(seedSentenceList, seedPath);
 		
+		// load training data
+		String trainPath = "penn-dependencybank/marginScore_train.conllx";
+		ArrayList< Pair <String, Integer> > trainSentenceList = loadSentencesFromFile(unlabeledPath, no_of_unlabeled_sentences);
+		
+		writeSentencesToFile(trainSentenceList, trainPath);
+		
+		List<DependencyTree> predictedParses = TrainAndTest(seedPath, trainPath);
+		
+		ArrayList< Pair<Integer, Double> > rawScoreToSentenceMap = new ArrayList<Pair <Integer, Double> > ();
+		
+		for(int i = 0; i < predictedParses.size(); i++) {
+			rawScoreToSentenceMap.add(new Pair<Integer, Double> (i, predictedParses.get(i).MarginScore * 0.5/trainSentenceList.get(i).second()));
+		}
+		rawScoreToSentenceMap.sort(new Comparator<Pair<Integer, Double>>() {
+	        @Override
+	        public int compare(Pair<Integer, Double> o1, Pair<Integer, Double> o2) {
+	            if (o1.second() > o2.second()) {
+	                return 1;
+	            } else {
+	                return -1;
+	            }
+	        }
+	    });
+		
+		ArrayList<Integer> toDel = new ArrayList<Integer> ();
+		int no_of_sentences = trainSentenceList.size();
+		int ans = 0, iterations = 0;
+		while(!trainSentenceList.isEmpty() && iterations < 20) {
+			toDel.clear();
+			int no_of_words = 0;
+			int j = 0;
+			while(no_of_words <= 1500 && no_of_sentences > 0) {
+				// rand = new Random();
+				// int val = rand.nextInt(no_of_sentences);
+				// System.out.println(val);
+				Pair <String, Integer> elem = trainSentenceList.get(rawScoreToSentenceMap.get(j).first());
+				seedSentenceList.add(elem);
+				toDel.add(rawScoreToSentenceMap.get(j).first());
+				// trainSentenceList.remove(rawScoreToSentenceMap.get(j).first());
+				no_of_words += elem.second();
+				no_of_sentences -= 1;
+				ans += 1;
+				j += 1;
+				
+			}
+			toDel.sort(new Comparator<Integer> () {
+				public int compare(Integer a, Integer b) {
+					if(a < b) return 1;
+					else if (a == b) return 0;
+					else return -1;
+				}
+			});
+			for(int x : toDel) {
+				// System.out.println(x);
+				trainSentenceList.remove(x);
+			}
+			if(no_of_sentences <= 0) break;
+			System.out.printf("Number of words = %d. Number of Sentences = %d\nseed size = %d, training size = %d\n", no_of_words, ans, seedSentenceList.size(), trainSentenceList.size());
+			
+			writeSentencesToFile(seedSentenceList, seedPath);
+			writeSentencesToFile(trainSentenceList, trainPath);
+			predictedParses = TrainAndTest(seedPath, trainPath);
+			no_of_sentences = trainSentenceList.size();
+			
+			rawScoreToSentenceMap.clear();
+			
+			for(int i = 0; i < predictedParses.size(); i++) {
+				rawScoreToSentenceMap.add(new Pair<Integer, Double> (i, predictedParses.get(i).MarginScore * 0.5/trainSentenceList.get(i).second()));
+			}
+			rawScoreToSentenceMap.sort(new Comparator<Pair<Integer, Double>>() {
+		        @Override
+		        public int compare(Pair<Integer, Double> o1, Pair<Integer, Double> o2) {
+		            if (o1.second() > o2.second()) {
+		                return 1;
+		            } else {
+		                return -1;
+		            }
+		        }
+		    });
+			
+			iterations++;
+		}
+		predictedParses = TrainAndTest(seedPath, testPath);
 	}
 	
 	// Train by picking 1500 words with longest sentence length
-	void LongSentenceTrain() {
+	void LongSentenceTrain(int no_of_seed_sentences, int no_of_unlabeled_sentences) {
+		// load seed data
+		String seedPath = "penn-dependencybank/longS_seed.conllx";
+		ArrayList< Pair <String, Integer> > seedSentenceList = loadSentencesFromFile(initPath, no_of_seed_sentences);
+		writeSentencesToFile(seedSentenceList, seedPath);
 		
+		// load training data
+		String trainPath = "penn-dependencybank/longS_train.conllx";
+		ArrayList< Pair <String, Integer> > trainSentenceList = loadSentencesFromFile(unlabeledPath, no_of_unlabeled_sentences);
+		writeSentencesToFile(trainSentenceList, trainPath);
+		
+		List<DependencyTree> predictedParses = TrainAndTest(seedPath, trainPath);
+		// Sort in descending order of sentence length. Longest sentences seem to be the most difficult to annotate.
+		trainSentenceList.sort(new Comparator<Pair<String, Integer>>() {
+	        @Override
+	        public int compare(Pair<String, Integer> o1, Pair<String, Integer> o2) {
+	            if (o1.second() < o2.second()) {
+	                return 1;
+	            } else if (o1.second() == o2.second()) {
+	            	return 0;
+	            } else {
+	                return -1;
+	            }
+	        }
+	    });
+		// Check if sorted
+//		for(Pair<String, Integer> elem : trainSentenceList) {
+//			System.out.println(elem.first() + "\n" + elem.second());
+//		}
+		
+		int no_of_sentences = trainSentenceList.size();
+		int ans = 0, iterations = 0;
+		while(!trainSentenceList.isEmpty() && iterations < 20) {
+			int no_of_words = 0;
+			while(no_of_words <= 1500 && no_of_sentences > 0) {
+				// rand = new Random();
+				// int val = rand.nextInt(no_of_sentences);
+				// System.out.println(val);
+				Pair <String, Integer> elem = trainSentenceList.get(0);
+				seedSentenceList.add(elem);
+				trainSentenceList.remove(0);
+				no_of_words += elem.second();
+				no_of_sentences -= 1;
+				ans += 1;
+			}
+			if(no_of_sentences <= 0) break;
+			System.out.printf("Number of words = %d. Number of Sentences = %d\nseed size = %d, training size = %d\n", no_of_words, ans, seedSentenceList.size(), trainSentenceList.size());
+			
+			writeSentencesToFile(seedSentenceList, seedPath);
+			writeSentencesToFile(trainSentenceList, trainPath);
+			predictedParses = TrainAndTest(seedPath, trainPath);
+			no_of_sentences = trainSentenceList.size();
+			iterations++;
+		}
+		predictedParses = TrainAndTest(seedPath, testPath);
 	}
 	
 }
