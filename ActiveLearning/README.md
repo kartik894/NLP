@@ -4,7 +4,8 @@
 # To run,
 The arguments are [seed-set] [unlabeled-set] [test-set] [number-of-seed-sentences] [number-of-unlabeled-sentences] [embedding-path] [model-path] [test-annotations-path] [mode - {random, length, raw, margin}]
 
-`java -cp src:stanford-corenlp.jar deParser.DependencyParserAPIUsage \
+```
+java -cp src:stanford-corenlp.jar deParser.DependencyParserAPIUsage \
 
 penn-dependencybank/wsj_initial.conllx \
 
@@ -22,4 +23,5 @@ outputs/model_6001 \
 
 outputs/test_annotation.conllx \
 
-random`
+random
+```
