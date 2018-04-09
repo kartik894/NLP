@@ -1,6 +1,6 @@
 # To compile,
-javac -cp .:stanford-corenlp.jar src/deParser/DependencyParserAPI.java
-javac -cp .:stanford-corenlp.jar src/deParser/DependencyParserAPIUsage.java
+`javac -cp .:stanford-corenlp.jar src/deParser/DependencyParserAPI.java`
+`javac -cp .:stanford-corenlp.jar src/deParser/DependencyParserAPIUsage.java`
 
 # To run,
 The arguments are [seed-set] [unlabeled-set] [test-set] [number-of-seed-sentences] [number-of-unlabeled-sentences] [embedding-path] [model-path] [test-annotations-path] [mode - {random, length, raw, margin}]
