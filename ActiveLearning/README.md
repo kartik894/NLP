@@ -1,5 +1,6 @@
 # To compile,
 `javac -cp .:stanford-corenlp.jar src/deParser/DependencyParserAPI.java`
+
 `javac -cp .:stanford-corenlp.jar src/deParser/DependencyParserAPIUsage.java`
 
 # To run,
