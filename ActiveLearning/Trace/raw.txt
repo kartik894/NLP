@@ -1,4 +1,4 @@
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -2550,16 +2550,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 4916, Elapsed Time: 0.21 (s)
 Initializing dependency parser ... done [0.5 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 52858 / 107272 = 49.27%
 UAS = 53.9021
 LAS = 43.5368
 DependencyParser parsed 107272 words in 4485 sentences in 32.0s at 3356.3 w/s, 140.3 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 43.536842105263155
 Number of words = 1517. Number of Sentences = 98
 seed size = 148, training size = 4387
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -5110,16 +5110,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 10227, Elapsed Time: 0.25 (s)
 Initializing dependency parser ... done [0.5 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 37907 / 105755 = 35.84%
 UAS = 67.4945
 LAS = 61.3384
 DependencyParser parsed 105755 words in 4387 sentences in 23.7s at 4457.3 w/s, 184.9 sent/s.
 61.338385185975774
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 Number of words = 1517. Number of Sentences = 189
 seed size = 239, training size = 4296
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -7670,16 +7670,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 14770, Elapsed Time: 0.327 (s)
 Initializing dependency parser ... done [0.6 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 32575 / 104238 = 31.25%
 UAS = 73.0566
 LAS = 67.7968
 DependencyParser parsed 104238 words in 4296 sentences in 21.5s at 4848.1 w/s, 199.8 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 67.796793643577
 Number of words = 1502. Number of Sentences = 265
 seed size = 315, training size = 4220
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -10230,16 +10230,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 19045, Elapsed Time: 0.265 (s)
 Initializing dependency parser ... done [0.6 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 27943 / 102736 = 27.20%
 UAS = 76.4167
 LAS = 71.9589
 DependencyParser parsed 102736 words in 4220 sentences in 16.5s at 6218.1 w/s, 255.4 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 71.95889192661154
 Number of words = 1506. Number of Sentences = 347
 seed size = 397, training size = 4138
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -12790,16 +12790,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 22726, Elapsed Time: 0.375 (s)
 Initializing dependency parser ... done [0.7 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 24881 / 101230 = 24.58%
 UAS = 77.1996
 LAS = 73.2091
 DependencyParser parsed 101230 words in 4138 sentences in 16.0s at 6326.5 w/s, 258.6 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 73.20911480375997
 Number of words = 1534. Number of Sentences = 420
 seed size = 470, training size = 4065
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -15350,16 +15350,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 26142, Elapsed Time: 0.637 (s)
 Initializing dependency parser ... done [0.9 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 22644 / 99696 = 22.71%
 UAS = 79.1363
 LAS = 75.5168
 DependencyParser parsed 99696 words in 4065 sentences in 15.3s at 6505.0 w/s, 265.2 sent/s.
 75.51675788140577
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 Number of words = 1504. Number of Sentences = 492
 seed size = 542, training size = 3993
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -17910,16 +17910,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 29048, Elapsed Time: 0.567 (s)
 Initializing dependency parser ... done [1.0 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 20815 / 98192 = 21.20%
 UAS = 80.3711
 LAS = 76.8766
 DependencyParser parsed 98192 words in 3993 sentences in 15.4s at 6389.4 w/s, 259.8 sent/s.
 76.87664252843224
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 Number of words = 1503. Number of Sentences = 568
 seed size = 618, training size = 3917
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -20470,16 +20470,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 32084, Elapsed Time: 0.601 (s)
 Initializing dependency parser ... done [0.9 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 19047 / 96689 = 19.70%
 UAS = 80.8036
 LAS = 77.5241
 DependencyParser parsed 96689 words in 3917 sentences in 14.2s at 6800.5 w/s, 275.5 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 77.52405806556843
 Number of words = 1519. Number of Sentences = 635
 seed size = 685, training size = 3850
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -23030,16 +23030,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 34952, Elapsed Time: 0.516 (s)
 Initializing dependency parser ... done [1.1 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 17688 / 95170 = 18.59%
 UAS = 81.9621
 LAS = 78.8659
 DependencyParser parsed 95170 words in 3850 sentences in 14.4s at 6624.2 w/s, 268.0 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 78.86585740990512
 Number of words = 1524. Number of Sentences = 705
 seed size = 755, training size = 3780
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -25590,16 +25590,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 37718, Elapsed Time: 0.728 (s)
 Initializing dependency parser ... done [1.2 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 16509 / 93646 = 17.63%
 UAS = 82.3049
 LAS = 79.3982
 DependencyParser parsed 93646 words in 3780 sentences in 13.6s at 6871.6 w/s, 277.4 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 79.39822328007982
 Number of words = 1516. Number of Sentences = 776
 seed size = 826, training size = 3709
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -28150,16 +28150,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 40384, Elapsed Time: 0.842 (s)
 Initializing dependency parser ... done [1.5 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 15279 / 92130 = 16.58%
 UAS = 82.8788
 LAS = 80.1676
 DependencyParser parsed 92130 words in 3709 sentences in 12.9s at 7166.9 w/s, 288.5 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 80.16756023986028
 Number of words = 1522. Number of Sentences = 844
 seed size = 894, training size = 3641
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -30710,16 +30710,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 42802, Elapsed Time: 0.709 (s)
 Initializing dependency parser ... done [1.6 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 14298 / 90608 = 15.78%
 UAS = 83.4606
 LAS = 80.8981
 DependencyParser parsed 90608 words in 3641 sentences in 12.2s at 7444.0 w/s, 299.1 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 80.89810917849206
 Number of words = 1520. Number of Sentences = 911
 seed size = 961, training size = 3574
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -33270,16 +33270,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 45387, Elapsed Time: 0.873 (s)
 Initializing dependency parser ... done [1.5 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 13456 / 89088 = 15.10%
 UAS = 83.9525
 LAS = 81.4745
 DependencyParser parsed 89088 words in 3574 sentences in 11.4s at 7823.7 w/s, 313.9 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 81.4744682194029
 Number of words = 1511. Number of Sentences = 982
 seed size = 1032, training size = 3503
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -35831,16 +35831,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 47458, Elapsed Time: 0.75 (s)
 Initializing dependency parser ... done [2.1 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 12748 / 87577 = 14.56%
 UAS = 84.1274
 LAS = 81.6964
 DependencyParser parsed 87577 words in 3503 sentences in 10.7s at 8177.9 w/s, 327.1 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 81.6963598090055
 Number of words = 1507. Number of Sentences = 1049
 seed size = 1099, training size = 3436
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -38392,16 +38392,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 49585, Elapsed Time: 0.632 (s)
 Initializing dependency parser ... done [3.7 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 12055 / 86070 = 14.01%
 UAS = 84.9114
 LAS = 82.5078
 DependencyParser parsed 86070 words in 3436 sentences in 14.9s at 5768.0 w/s, 230.3 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 82.50776823249863
 Number of words = 1521. Number of Sentences = 1112
 seed size = 1162, training size = 3373
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -40953,16 +40953,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 51459, Elapsed Time: 1.022 (s)
 Initializing dependency parser ... done [1.4 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 11463 / 84549 = 13.56%
 UAS = 84.8873
 LAS = 82.4690
 DependencyParser parsed 84549 words in 3373 sentences in 51.9s at 1628.9 w/s, 65.0 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 82.4690078526727
 Number of words = 1514. Number of Sentences = 1183
 seed size = 1233, training size = 3302
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -43517,13 +43517,13 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 53327, Elapsed Time: 0.875 (s)
 Initializing dependency parser ... done [2.1 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 10891 / 83035 = 13.12%
 UAS = 85.1245
 LAS = 82.7979
 DependencyParser parsed 83035 words in 3302 sentences in 21.7s at 3824.9 w/s, 152.1 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
-Train File: penn-dependencybank/marginScore_seed.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -46075,16 +46075,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 55101, Elapsed Time: 1.046 (s)
 Initializing dependency parser ... done [2.0 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 10404 / 81534 = 12.76%
 UAS = 85.2724
 LAS = 83.0039
 DependencyParser parsed 81534 words in 3239 sentences in 11.8s at 6888.6 w/s, 273.7 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 83.00392534949384
 Number of words = 1505. Number of Sentences = 1311
 seed size = 1361, training size = 3174
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -48636,16 +48636,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 57012, Elapsed Time: 1.101 (s)
 Initializing dependency parser ... done [5.0 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 9895 / 80029 = 12.36%
 UAS = 85.5189
 LAS = 83.2389
 DependencyParser parsed 80029 words in 3174 sentences in 11.4s at 7022.6 w/s, 278.5 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 83.2388595801998
 Number of words = 1520. Number of Sentences = 1373
 seed size = 1423, training size = 3112
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -51197,16 +51197,16 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 59137, Elapsed Time: 1.488 (s)
 Initializing dependency parser ... done [2.1 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 9289 / 78509 = 11.83%
 UAS = 85.8710
 LAS = 83.7527
 DependencyParser parsed 78509 words in 3112 sentences in 14.0s at 5605.8 w/s, 222.2 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 83.75266402528857
 Number of words = 1542. Number of Sentences = 1435
 seed size = 1485, training size = 3050
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
@@ -53758,14 +53758,14 @@ Loading depparse model: outputs/model_5004 ...
 Loaded TreebankLanguagePack: edu.stanford.nlp.trees.PennTreebankLanguagePack
 PreComputed 60978, Elapsed Time: 0.719 (s)
 Initializing dependency parser ... done [1.1 sec].
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 OOV Words: 8852 / 76967 = 11.50%
 UAS = 86.3602
 LAS = 84.1112
 DependencyParser parsed 76967 words in 3050 sentences in 7.7s at 10044.0 w/s, 398.0 sent/s.
-Test File: penn-dependencybank/marginScore_train.conllx
+Test File: penn-dependencybank/rawScore_train.conllx
 84.11119537949945
-Train File: penn-dependencybank/marginScore_seed.conllx
+Train File: penn-dependencybank/rawScore_seed.conllx
 Dev File: null
 Model File: outputs/model_5004
 Embedding File: penn-dependencybank/en-cw.txt
